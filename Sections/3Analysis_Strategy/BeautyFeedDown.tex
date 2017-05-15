@@ -1,0 +1,38 @@
+\begin{comment}
+\begin{figure}
+\centering
+%\includegraphics[width=.49\linewidth]{figures/xxxxxxx}
+%\includegraphics[width=.49\linewidth]{figures/xxxxxxx}
+%\includegraphics[width=.49\linewidth]{figures/xxxxxxx}
+ \caption{Top left: azimuthal correlation distribution between D meson from b-hadron decay and charged particles obtained from a Monte Carlo simulation
+based on Pythia (Perugia-0 tune) fitted with a 2+1 Gaussian + constant function. The violet histogram is the template obtained by scaling the baseline
+in order to match that measured in data. Top right: data correlation distributions obtained after the subtraction of the feed-down component, using 3 different values of $f_{\rm prompt}$ resulting
+from the variation of the charm and beauty quark masses and factorization and renormalization scales employed in the FONLL calculation. Bottom: ratios between the azimuthal
+distribution obtained with the maximum and minimum $f_{\rm prompt}$ values and that obtained with the central $f_{\rm prompt}$ value.}
+ \label{fig:feeddownDescription}
+\end{figure}
+\end{comment}
+%
+%
+The contribution of correlations of D meson from b-hadron decay is subtracted from the uncorrected as:
+\begin{equation}
+\tilde{C}_{\rm prompt~D}(\Delta\phi)=\frac{1}{f_{\rm prompt}}\left(\tilde{C}_{\rm inclusive}(\Delta\phi)-(1-f_{\rm prompt})\tilde{C}_{\rm feed-down}^{\rm MC~templ}(\Delta\phi) \right).
+\label{eqFeedDown}
+\end{equation}
+In the above equation, $\tilde{C}_{\rm inclusive}(\Delta\phi)$ and $\tilde{C}_{\rm prompt~D}(\Delta\phi)$ are per-trigger azimuthal correlation distributions before and after
+feed-down contribution subtraction, $f_{\rm prompt}$ is the fraction of prompt D meson and $\tilde{C}_{\rm feed-down}^{\rm MC~templ}$ is a template
+of the azimuthal correlation distribution for the feed-down component obtained from Monte Carlo simulation. The value of $f_{\rm prompt}$, which depends on D-meson species and varies as a function of the $\pt$, is estimated on the basis of FONLL predictions
+and using the reconstruction efficiency of prompt and feed-down D mesons, as described in~\cite{ALICEDmespp7Tev}. Typical values ranges from 5 to 20\% for the
+$\Dzero$ from low to high $\pt$ and from few percent to {\bf 8\%} for the $\Dstar$. The procedure adopted is the same as what done in pp: however, in p--Pb, in order to consider a possible non-zero $v_{2}$-like modulation of the baseline, a range of $0<v_{2}<0.2$ values for tracks and for secondary D mesons is considered. %The green histogram in figure~\ref{fig:feeddownDescription}, top left panel, represents
+%the azimuthal correlation distribution between D meson from b-hadron decay and charged particles obtained from a Monte Carlo simulation
+%based on Pythia (Perugia-0 tune). This distribution is
+%fitted with a function composed of 2 Gaussian, modeling the near-side peak, 1 Gaussian modeling the away-side peak and a constant term modeling
+%the baseline. A second template (violet histogram) is obtained after rescaling the baseline to the value obtained from a fit to the data distribution. In the top right panel
+%the data correlation distributions obtained after the subtraction of the feed-down component, using 3 different values of $f_{\rm prompt}$ resulting
+%from the variation of the charm and beauty quark masses and factorization and renormalization scales employed in the FONLL calculation, are compared
+%to the uncorrected one. As clearly visible the difference is minimal, within few percent. In the bottom panel of the same figure the ratios between the azimuthal
+%distribution obtained with the maximum and minimum $f_{\rm prompt}$ values  and that obtained with the central $f_{\rm prompt}$ value show that the uncertainty
+%on the feed-down subtraction arising from the uncertainty on the FONLL calculation is contained within 2-3\%. {\bf THE ESTIMATE OF THE UNCERTAINTY DERIVING
+%FROM THE MONTE CARLO SIMULATION FROM WHICH THE TEMPLATE IS OBTAINED IS BEING STUDIED.}.
+
+\newpage % always start next (sub)section with new page to avoid disarrangement. 

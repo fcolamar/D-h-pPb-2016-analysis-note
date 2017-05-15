@@ -1,0 +1,141 @@
+
+{\bf \normalsize (i) Tracking efficiency} is calculated by obtaining the ratio between the yield at the reconstructed level and generated level, for a defined ``type" of particles and it is estimated differentially in p$_T$, $\eta$, and z$_{vtx}$ of the event.\\
+{\bf Implementation }: tracking efficiency maps are produced as TH3D histograms (p$_T$, $\eta$, z$_{vtx}$) obtained from MC analysis after all event and particles/track selections (summarized in Table.~\ref{table:effCuts}). These efficiency maps are used in the analysis tasks to extract single track efficiencies in which each associated track is inserted in correlation plots with a weight of {\bf 1/efficiency value}. Example plots of the tracking efficiencies as a function of p$_T$ are shown in Fig.~\ref{fig:trackeff} for different particle species. %for different set of DCA values and Fig.~\ref{fig:trackeffvsspecies} for the different particle species. 
+The one-dimension p$_\mathrm{T}$ efficiency with different sets of track cuts is almost flat at mid and high p$_\mathrm{T}$ range and has small fluctuation in the low p$_\mathrm{T}$ region and average efficiency per species in mentioned in Table.~\ref{table:AvgeffValue}.
+
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[scale=0.35]{figures/pPb_STE_1D_pT_all_DCA.png}
+%	\caption{Charged particle $p_T$ efficiency for different DCA values.}
+%	\label{fig:trackeff}	
+%\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.35]{figures/pPb_efficiencyVsspeicies.png}
+	\caption{$p_T$ efficiency for different species.}
+	\label{fig:trackeffvsspecies}	
+\end{figure}
+
+
+% new table on Nov3 for average efficiency
+\begin{table}[h]
+\small
+\centering % used for centering table
+\begin{tabular}{ p{3.5cm} | p{2.5cm} | p{2.5cm} |  p{2.5cm}  }
+{\normalsize \textbf {Species / $p_t$ range }} & {\normalsize \textbf {0.3-24.0 GeV/c}} &   {\normalsize \textbf {0.5-24.0 GeV/c}} &   {\normalsize \textbf {0.3-0.5 GeV/c}}\\
+\hline
+&&\\		
+all-Charge & 0.832211 & 0.850089 & 0.804515 \\
+Pions & 0.865529 & 0.889492 & 0.834333 \\
+Kaons & 0.678151 & 0.729512 & 0.528229 \\
+Protons & 0.853865 & 0.883295 & 0.714668 \\
+Electrons & 0.869452 & 0.856509 & 0.903016 \\
+ \hline \hline
+\end{tabular}
+\caption{\large {Average $p_T$ efficiency per species (LHC16q/pass1$\_$woSDD/AOD)}} % title of Table
+\label{table:AvgeffValue}	
+\end{table}
+
+\newpage
+Details of cuts at event level and particle selection at different steps are listed in Table.~\ref{table:effCuts} . \\
+\begin{table}[h]
+\small
+\centering % used for centering table
+
+\begin{tabular}{ p{4cm} c | p{5cm} |  p{5.5cm} }
+ \\
+  \multirow{1}{*}{\large \textbf {MC Generated }} \\
+\hline
+\\
+  {\normalsize \textbf {Event Selection}} &&               \multicolumn{1}{c}{{\normalsize \textbf {Particle Selection}}} \\
+		            &&               Stages         &              Cuts \\
+\hline\hline && &\\		            	
+1. -10cm $\textless$ Zvtx $\textless$ 10cm  &&               1.MC Part with Generated Cuts         &    {\textbf {After Event Selection}}\\
+																		   &&&Charge\\
+																		    &&& PDG Code\\
+														  				  &&& Physical Primary \\
+
+
+										
+2. Multiplicity                     &&               2. MC Part with Kine Cuts         &              {\textbf {Kinematics Cuts }}\\
+															    &&& -0.8$\textless \eta \textless  0.8$\\
+															    &&& 0.3 $\textless$ pT $\textless $ 24 (GeV/$c$)\\
+
+
+3. Type of MC process    &&               3. MC Part with Acceptance Cuts         &      {\textbf {nhits ref on detectors ( ESD only)}}  \\
+															      &&& a) ITS = 4 \\
+														 	      &&& b) TPC = 5 \\	
+														                &&& c) TOF = 0\\
+															       &&& d) MOUN = 0\\
+&& &		\\            	
+
+
+\multirow{1}{*}{\large \textbf {MC Reconstructed }} &&& \\
+\hline
+
+
+\hline && &\\		            	                        	
+1. -10cm $\textless$ Zvtx $\textless$ 10cm  &&               4. Reco tracks        &                             {\textbf {After Event Selection}}\\
+															    &&& Physical Primary \\
+															
+															
+2. Multiplicity                     &&               5. Reco tracks with Kine Cuts         &               {\textbf  {Kinematics Cuts }}\\
+															    &&& -0.8$\textless \eta \textless  0.8$\\
+															    &&& 0 $\textless$ pT $\textless $ 24 (GeV/$c$)\\
+
+
+
+3. Physics Selection    &&               6. MC true with Quality Cuts         &      			      {\textbf  {Quality Cuts }} \\
+																	&&&SetRequireSigmaToVertex(kFALSE) \\
+																	&&&SetDCAToVertex2D(kFALSE) \\
+																	&&&SetMinNClustersTPC(70)\\
+																	&&&SetMinNClustersITS(3)\\
+																	&&&SetMaxChi2PerClusterTPC(4)\\
+																	&&&SetMaxDCAToVertexZ(1) \\
+																	&&&SetMaxDCAToVertexXY(0.25) \\
+																	&&&SetRequireTPCReï¿œt(TRUE) \\
+																	&&&SetRequireITSReï¿œt(TRUE) \\
+																	&&&SetClusterRequirementITS(SPD, ..) \\
+
+
+ 				      &&               7. Reco tracks with Quality Cuts         &             {\textbf  {Same as step 6}} \\
+
+&& &\\		            	            		
+
+ \hline \hline
+ \\
+\end{tabular}
+\caption{\large {Single Track Efficiency cuts detail}} % title of Table
+\label{table:effCuts}	
+\end{table}
+
+
+{\bf \large (ii) D Meson efficiency} - Due to limited statistics, the correlation analysis is performed in wide p$_\mathrm{T}$ bins and in each of them the reconstruction and selection efficiency of D mesons is not flat (Fig.~\ref{fig:dpluseff},~\ref{fig:d0eff}). We correct for the p$_\mathrm{T}$ dependence of the trigger efficiency within each p$_\mathrm{T}$-bin.
+This correction is applied online, by using a map of D meson efficiency as a function of p$_\mathrm{T}$ and event multiplicity extracted from MC.
+While running the analysis, each correlation entry is weighted by {\bf 1/trigger efficiency}. It was observed that multiplicity dependence of the efficiency does not bias the extraction of the signal yield from the invariant mass distributions. Efficiency plots for $D^{+}$ meson and $D^{0}$ meson are shown in Fig.~\ref{fig:dpluseff} and ~\ref{fig:d0eff}.
+
+\begin{figure}[h]
+	\centering
+	%Marianna
+	%\includegraphics[width=.50\linewidth]{figures/Efficiency_Dplus_Corrected_Central.png} \\% by Jitendra
+	%\includegraphics[width=.30\linewidth]{figures/Dplus_3_5Multplicty_eff.png}
+	%\includegraphics[width=.30\linewidth]{figures/Dplus_5_8Multplicty_eff.png}
+	%\includegraphics[width=.30\linewidth]{figures/Dplus_8_16Multplicty_eff.png}
+	\caption{Top panel: (p$_T$, multiplicity) dependence of $D^+$ meson efficiency. Bottom panels: $D^+$ meson efficiency in multiplicity for three $D^+$ p$_\mathrm{T}$ranges: 3-5 GeV/$c$ (left), 5-8 GeV/$c$ (center), 8-16 GeV/$c$ (right).}
+	\label{fig:dpluseff}	
+\end{figure}
+
+\begin{figure}[!htp]
+	\centering
+%Marianna
+	%\includegraphics[width=.48\linewidth]{figures/D0Eff_From_c_wLimAcc_2D_pPb.png}  % by Fabio
+	%\includegraphics[width=.48\linewidth]{figures/D0Eff_From_c_wLimAcc_1D_pPb.png} \\
+	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_3to4GeV.png}
+	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_5to6GeV.png}
+	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_8to12GeV.png}
+	\caption{Top panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of prompt $D^0$ meson efficiency. Bottom panels: multiplicity dependence of $D^0$ meson efficiency for three $D^0$ p$_\mathrm{T}$ ranges: 3-4 GeV/$c$ (left), 5-6 GeV/$c$ (center), 8-12 GeV/$c$ (right). For tracklet multiplicity$>$ 120, due to the limited statistics, the efficiency value is fixed to the one obtained for 90$<$tracklet multiplicity$<$120.}
+	\label{fig:d0eff}	
+\end{figure}
+\newpage 
