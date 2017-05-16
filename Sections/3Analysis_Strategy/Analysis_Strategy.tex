@@ -1,16 +1,12 @@
-The analysis strategy follows the one used fro 2013 p-Pb data sample. The particle pairs are formed by
-trigger particles defined by the transverse momentum threshold $\pt>\pt^{\rm trig}$ and associated particles defined by $\pt>p_{T}^{\rm assoc}$. Each
-pair of particles is considered only once by
-requiring $\pt^{\rm assoc}<\pt^{\rm trigg}$. In D meson correlations, the particle identification
+The analysis strategy follows the one used from 2013 p-Pb data sample. Correlation pairs are formed by
+trigger particles (D mesons) reconstructed and selected in the following $\pt^{\rm trig}$ ranges: 3-5, 5-8, 8-16, 16-24 $\gev/c$, and associated particles (charged tracks) for the following $\pt^{\rm assoc}$ regions: $>$0.3, 0.3-1, 1-2, 2-3, $>$3 $\gev/c$ (with the addition of $>$1 $\gev/c$ for comparison with p-Pb 2013 results). In D meson correlations, the particle identification
 defines the trigger particle rather than a momentum cut and therefore the momentum
 range of the associated particles is not constrained by that of the trigger particle. Our definition of
 associated particle includes any charged particle coming from the primary vertex of interaction, including
 those coming from strong and electromagnetic decay of unstable particles, and particles deriving from the
-decay of hadrons with charm or beauty. 
-Basically, we include any charged particle except those coming from weak decays of strange particles and particles produced in the interaction with the detector material.
-% (n.b. this definition corresponds to that used in the method AliAODMCParticle::IsPyhysicalPrimary()). 
-All associated particles surviving the selection
-cuts and not matching the adopted criterion are considered as a contamination whose contribution has to be corrected for. \\
+decay of hadrons with charm or beauty.
+We therefore include any charged particle except those coming from weak decays of strange particles and particles produced in the interaction with the detector material. This definition corresponds to that used in the method AliAODMCParticle::IsPyhysicalPrimary().
+All associated particles surviving the selection cuts and not matching the adopted criterion are considered as a contamination whose contribution has to be corrected for. \\
 
 The analysis is performed through the following steps:
 \begin{enumerate}
@@ -19,7 +15,7 @@ The analysis is performed through the following steps:
 \underline {\bf D meson selection and signal extraction.}  For each single event, ``trigger" particles
 are defined as the selected  D meson candidates ($\Dzero$, $\Dplus$ and $\Dstar$)
 within a given $\pt^{\rm trig}$ range. The detection strategy for D mesons at central rapidity is
-the same as that described in~\cite{ALICEDmespp7Tev} and is based on the reconstruction of decay 
+the same as that described in~\cite{ALICEDmespp7Tev} and is based on the reconstruction of decay
 vertices displayed from the primary vertex by a few hundred $\mu$m and on the identification of the decay-particle species.
 The identification of the charged kaon and pion in the TPC and TOF
 detectors helps to further reduce the background at low $\pt$.  An
@@ -29,7 +25,7 @@ the same fit functions described in~\cite{ALICEDmespp7Tev}.
 %the selection of displaced-vertex topologies, achieved e.g. by requiring a significant
 %distance between the secondary vertex and the primary vertex of interation (decay length) and good
 %alignment  between the reconstructed D meson momentum and
-%the flight-line joining the primary and secondary vertex. 
+%the flight-line joining the primary and secondary vertex.
 
 %to be then corrected for detector acceptance and for
 %particle identification, selection and reconstruction efficiency,
@@ -69,7 +65,7 @@ formed with $\Dzero$ candidates in the $\Dzero$ signal region in the right part 
 \item
 \underline {\bf Correction for limited acceptance and detector inhomogeneities with Event Mixing}
 The angular correlation distribution may be affected, even for uncorrelated pair of particles, by structures not due to physical effects, but originating from the limited detector acceptance or from angular inhomogeneities in the trigger and track reconstruction efficiencies as a function of $\Delta\phi$ and $\Delta\eta$.
-In particular, these always produces an excess of correlations in the near side of the $\Delta\phi$ distribution. Effects of this kind are removed using the Event Mixing technique. 
+In particular, these always produces an excess of correlations in the near side of the $\Delta\phi$ distribution. Effects of this kind are removed using the Event Mixing technique.
 In detail, the analysis is executed on the same data sample of the standard one (called ``same event" analysis, SE), but the trigger particles found in each event are correlated to charged particles reconstructed in different events (``Mixed Events'' analysis, ME). \\
 
 The differential yield of associated particles per trigger particle is obtained by
@@ -132,7 +128,7 @@ pseudorapidity, transverse momentum, and z-coordinate of the primary vertex is t
 efficiency only the $\pt$ and the event multiplicity dependencies of the efficiency are considered, mainly to avoid large statistical fluctuations
 on the efficiency values arising when including also the dependency on $\eta$, due to the limited
 size of the Monte Carlo sample from which the D meson efficiencies are evaluated. %Studies of the impact of the event multiplicity dependence
-%on the final results showed effects contained within 5\%. 
+%on the final results showed effects contained within 5\%.
 The details of the efficiency corrections can be found in the following sections. To properly count
 the number of trigger particles, each D meson is weighted with the inverse of its efficiency
 in the invariant mass distribution. The main role of the correction for the D meson efficiency
