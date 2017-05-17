@@ -52,7 +52,7 @@ ADD: CUT OPTIMIZATION PARAGRAPH FOR D0, WITH SOME PLOT- PUT A REFERENCE TO MY LA
 \item
 \underline {\bf Correction for limited acceptance and detector inhomogeneities with Event Mixing}
 The angular correlation distribution may be affected, even for uncorrelated pair of particles, by structures not due to physical effects, but originating from the limited detector acceptance, as well as from angular inhomogeneities in the trigger and track reconstruction efficiencies as a function of $\Delta\phi$ and $\Delta\eta$.
-In particular, in case of detector inefficient regions, or holes, in the same angular position for D meson and associated tracks, these structures produce an excess of correlations at $\Delta\phi=0$ in the $\Delta\phi$ distribution. Effects of this kind are removed using the Event Mixing technique.
+Effects of this kind are removed using the Event Mixing technique.
 In details, the analysis is executed on the same data sample of the standard one (called ``same event" analysis, SE), but the trigger particles found in each event are correlated to charged particles reconstructed in different events (``Mixed Events'' analysis, ME) with similar characteristic, in particular concerning the event multiplicity and z position of the primary vertex (see Section \ref{MEsection}. \\
 
 The differential yield of associated particles per trigger particle is obtained by
@@ -67,9 +67,8 @@ where $N^\text{pair}$ is the total number of correlated D-hadron
 pairs. The functions $S(\Delta\eta,\Delta\phi)$ and
 $B_{ME}(\Delta\eta,\Delta\phi)$ are the signal and the mixed event
 background distributions, respectively. The latter is normalized to its value in
-$(\Delta\eta,\Delta\phi)=(0,0)$, i.e. ($B(0,0)$)\footnote{The $(\Delta\eta,\Delta\phi)=(0,0)$ value is computed as the average of the bin in the range $-0.2 < \Delta\eta < 0.2$, $-0.2 < \Delta\phi < 0.2$ to reduce the influence of bin-by-bin fluctuations in the mixed-event distribution.}. This kind of normalization, adopted in the analysis of hadron-hadron correlations, relies on the fact that at $(\Delta\eta,\Delta\phi)=(0,0)$ the trigger and associated particle experience the same detector effects. In the D meson case this is true only on average and not at very low $\pt$, since D mesons are recontructed from particles that can go
-in different detector region. However, $(\Delta\eta,\Delta\phi)=(0,0)$ is in any case
-the region with maximum efficiency for the pairs (both correlated and uncorrelated). Thus the same convention was adopted.
+$(\Delta\eta,\Delta\phi)=(0,0)$, i.e. ($B(0,0)$).
+Further details on the mixed-event correction are provided further on.
 
 The signal distribution is the per-trigger-particle yield of pairs found in the same event,
 \begin{linenomath}
@@ -88,15 +87,7 @@ B_{ME}(\Delta\eta,\Delta\phi) = \frac{1}{N_\text{trig}}\frac{\d^{2}N^\text{mix}}
 \end{equation}
 \end{linenomath}
 where $N^\text{mix}$ denotes the number of
-mixed-event pairs. %This background distribution represents the expected correlation
-%if the only effects present were random combinatorics and pair-acceptance. %
-%The value of $B(\Delta\eta,\Delta\phi)$ at $\Delta\eta=0$ and $\Delta\phi=0$
-% is used to find the normalisation factor $B(0,0)$.
-%In this case, the two particles have the maximum possible geometric pair acceptance
-%since they are traveling in essentially the same direction.
-%The effect of two tracks merging into a single reconstructed track is negligible. The extent to which the background distribution
-%at larger angular separation
-%is smaller than this value (more specifically
+mixed-event pairs.
 The ratio $B(0,0)/B(\Delta\eta,\Delta\phi)$
 determines the pair acceptance correction
 factor. Multiplying the signal distribution by this ratio
@@ -111,7 +102,7 @@ invariant mass spectrum are extracted. For $\Dzero$ and $\Dplus$, a ``background
 distribution as the interval $4 \gev/c^2<|m-m^{\rm pdg}|<8 \gev/c^2$ (for the $\Dstar$ meson, only the right sideband is used). The angular correlation distribution
 for background candidates in this region is extracted and normalized with respect to the background in the signal region
 estimated from the mass fit. This normalized background correlation distribution is then subtracted from the
-raw signal one to obtain the signal correlation distribution. The normalization factor is the ratio of the number of background candidates under the signal peak (obtained bin-counting the candidates in the signal region and subtracting the integral of the fit function for the signal only, in the same range\footnote{With this procedure, the statistical fluctuations in the signal region are treated as background fluctuations. This is acceptable, since in most of the $\pt$ ranges B $>$ S, hence B fluctuations are higher than S fluctuations.} \bf{NOTE: THIS, AT LEAST FOR D0, SHALL BE REVERSED, SINCE WITH OPTIMIZED CUTS S $>$B IN MOST BINS. FOR D+ AND D*, PLEASE CHECK!!!}) over the number of background candidates in the sidebands (obtained via bin-counting in the sideband region). This normalized background correlation distribution is then subtracted from the
+raw signal one to obtain the signal correlation distribution. The normalization factor is the ratio of the number of background candidates under the signal peak (obtained bin-counting the candidates in the signal region and subtracting the integral of the fit function for the signal only, in the same range\footnote{With this procedure, the statistical fluctuations in the signal region are treated as background fluctuations. This is acceptable, since in most of the $\pt$ ranges B $>$ S, hence B fluctuations are higher than S fluctuations.} {\bf NOTE: THIS, AT LEAST FOR D0, SHALL BE REVERSED, SINCE WITH OPTIMIZED CUTS S $>$B IN MOST BINS. FOR D+ AND D*, PLEASE CHECK!!!}) over the number of background candidates in the sidebands (obtained via bin-counting in the sideband region). This normalized background correlation distribution is then subtracted from the
 raw signal one to obtain the signal correlation distribution.
 
 ADD PLOT OF 1D SIGNAL, SB, SIGNAL-SB REGION (I UPLOADED ONE EXAMPLE FOR D0)
@@ -180,14 +171,9 @@ The fitting procedure is described in details the \ref{results} section.
 
 
 \subsection{Code used for the analysis}
-The code used for D meson-hadron correlation analysis is committed
-to the Ali-Physics. The analysis classes can be found in
-\$ALICE\_ROOT/PWGHF/correlationHF/.  The  D meson specific classes
-where the aforementioned steps are carried out are
-AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and
-AliAnalysisTaskDplusCorrelations. The classes which are common to the D meson specific analysis
-which includes the associated particle cuts and  the correlation
-observables are AliHFAssociatedTrackCuts, AliHFCorrelator and AliReducedParticle.
+The code used for D meson-hadron correlation analysis is fully committed in AliPhysics. The analysis classes can be found in
+\$ALICE\_ROOT/PWGHF/correlationHF/.  The  D meson specific classes where the aforementioned steps are carried out are
+AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and AliAnalysisTaskDplusCorrelations. The classes which are common to the D meson specific analysis which includes the associated particle cuts and the correlation observables are AliHFAssociatedTrackCuts, AliHFCorrelator, AliHFOfflineCorrelator, AliReducedParticle and AliDhCorrelationExtraction. Several additional classes and macros in the same folder deal with the correction steps.
 
 
 \subsection{Corrections}
