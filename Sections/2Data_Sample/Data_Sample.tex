@@ -8,12 +8,7 @@ The Monte Carlo productions adopted for this study were:
 
 Table 1 shows the list of runs used for the analysis, for each of the data taking periods, and of the Monte Carlo productions used to evaluate the corrections:
 
-AFTER THE TABLE, SOME LINES FOR THE EVENT SELECTION HAVE TO BE ADDED (trigger class and mask, pile up cuts, physics selection, full 0-100 centrality range with ZNA estimator, zvtz $<$ 10 cm, etc.)
-
-FINALLY, A DISCUSSION FOR wsdd VS wosdd SAMPLES MUST BE DONE, WITH THE REASONING OF OUR FINAL CHOICE (WITH PLOTS FOR AT LEAST ONE MESON, BUT BETTER BOTH D+ and D*)
-
- \vspace{10 mm}
-
+\vspace{10 mm}
 % Systematic table
 \begin{table}[h]
 \begin{tabular}{ p{1.2cm} | p{4.2cm} |  p{7cm} |  p{1.2cm}}
@@ -33,3 +28,12 @@ Monte-Carlo & LHC17d2a$\_$fast$\_$new/AOD (c/b enriched), LHC17a2b$\_$fast (MB),
 \\
 \caption {Data Set and Run list}
 \end{table} 
+
+The trigger mask request for the event selection is kINT7. Only events with a reconstructed primary vertex within 10 cm from the centre of the detector along the beam line are considered for both pp and p–Pb collisions. This choice maximises the detector coverage of the selected events, considering the longitudinal size of the interaction region, and
+the detector pseudorapidity acceptances. For p–Pb collisions, the center-of-mass reference frame of the nucleon-nucleon collision is shifted in rapidity by $y_{\rm NN}$ = 0.465 in the proton direction with respect to the laboratory frame, due to the different per-nucleon energies of the proton and the lead beams.
+Beam-gas events are removed by offline selections based on the timing information provided by the V0 and the Zero Degree Calorimeters, and the correlation between the number of hits and track segments in the SPD detector. This is automatically performed in the Physic Selection, a positive outcome of which is required during our event selection.
+The minimum-bias trigger efficiency is 100\% for events with D mesons with $\pt > 1$ GeV/c. For the analyzed data samples, the probability of
+pile-up from collisions in the same bunch crossing is below 2\% per triggered event (in most of the runs, well below 1\%). Events in which more than one primary interaction vertex is reconstructed with the SPD detector (with minimum of 5 contributors, and a $z$ distance greater than 0.8 cm) are
+rejected, which effectively removes the impact of in-bunch pile-up events on the analysis. Out-of-bunch tracks are effectively rejected by the request of at least one point in the SPD, which has a very limited time acquisition window (300 ns). Indeed, though the default associated track selection requires a minimum of 2 points in the ITS, as it will be shown later on full compatibility of the corrected results with 2 and 3 minimum ITS clusters is obtained. For FAST and CENT_woSDD samples, the latter case indirectly forces the presence of a point in the SPD. 
+
+{\bf A SMALL DISCUSSION FOR wsdd VS wosdd SAMPLES MUST BE DONE, WITH THE REASONING OF OUR FINAL CHOICE (WITH PLOTS FOR AT LEAST ONE MESON, BUT BETTER BOTH D+ and D*). YOU CAN PICK THE PLOTS FROM SHYAM AND MARIANNA'S TALKS!!} 
