@@ -13,7 +13,7 @@
 
 \begin{figure}[h]
 	\centering
-	%\includegraphics[scale=0.35]{figures/pPb_efficiencyVsspeicies.png}
+	\includegraphics[scale=0.35]{figures/Effs/TrackEfficiencyPlots_zVtxbin5_a2b_default_1Dmap.png}
 	\caption{$p_T$ efficiency for standard track selection.}
 	\label{fig:trackeffvsspecies}	
 \end{figure}
@@ -86,11 +86,15 @@ Details of cuts at event level and particle selection at different steps are lis
 This correction is applied online, by using a map of D meson efficiency as a function of p$_\mathrm{T}$ and event multiplicity (in terms of SPD tracklets in $|\eta|<1$) extracted from the enriched Monte Carlo sample LHC17d2a$\_$fast$\_$new.
 While running the analysis, each correlation entry is weighted by {\bf 1/trigger efficiency}. It was observed that multiplicity dependence of the efficiency does not bias the extraction of the signal yield from the invariant mass distributions (which, as anticipated, are also weighted in the same manner). Efficiency plots for $\Dzero$, $\Dplus$ and $\Dstar$ mesons are shown in Fig.~\ref{fig:doeff}, Fig.~\ref{fig:dpluseff} and ~\ref{fig:dstareff}.
 
-\begin{figure}[!htp]
+\begin{figure}[!htp]     %da c
 	\centering
 %Marianna
-	%\includegraphics[width=.48\linewidth]{figures/D0Eff_From_c_wLimAcc_2D_pPb.png}  % by Fabio
-	%\includegraphics[width=.48\linewidth]{figures/D0Eff_From_c_wLimAcc_1D_pPb.png} \\
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_DPlus_c_Ref_wLimAcc_Plot.png}  % by Fabio
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_DPlus_c_Ref_wLimAcc_Plot.png} 
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_DStar_c_Ref_wLimAcc_Plot.png}  % by Fabio
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_DStar_c_Ref_wLimAcc_Plot.png} 
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_Dzero_c_Ref_wLimAcc_Plot.png}  % by Fabio
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_Dzero_c_Ref_wLimAcc_Plot.png} 
 	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_3to4GeV.png}
 	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_5to6GeV.png}
 	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_8to12GeV.png}
@@ -98,13 +102,15 @@ While running the analysis, each correlation entry is weighted by {\bf 1/trigger
 	\label{fig:d0eff}	
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h]   %da B
 	\centering
 	%Marianna
-	%\includegraphics[width=.50\linewidth]{figures/Efficiency_Dplus_Corrected_Central.png} \\% by Jitendra
-	%\includegraphics[width=.30\linewidth]{figures/Dplus_3_5Multplicty_eff.png}
-	%\includegraphics[width=.30\linewidth]{figures/Dplus_5_8Multplicty_eff.png}
-	%\includegraphics[width=.30\linewidth]{figures/Dplus_8_16Multplicty_eff.png}
+		\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_DPlus_b_Ref_wLimAcc_Plot.png}  % by Fabio
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_DPlus_b_Ref_wLimAcc_Plot.png} 
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_DStar_b_Ref_wLimAcc_Plot.png}  % by Fabio
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_DStar_b_Ref_wLimAcc_Plot.png} 
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_Dzero_b_Ref_wLimAcc_Plot.png}  % by Fabio
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_Dzero_b_Ref_wLimAcc_Plot.png} 
 	\caption{Top panel: (p$_T$, multiplicity) dependence of $D^+$ meson efficiency. Bottom panels: $D^+$ meson efficiency in multiplicity for three $D^+$ p$_\mathrm{T}$ranges: 3-5 GeV/$c$ (left), 5-8 GeV/$c$ (center), 8-16 GeV/$c$ (right).}
 	\label{fig:dpluseff}	
 \end{figure}
