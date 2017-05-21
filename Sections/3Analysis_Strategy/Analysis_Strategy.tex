@@ -21,6 +21,25 @@ detectors helps to further reduce the background at low $\pt$.  An
 invariant-mass analysis is then used to extract the raw signal yield, using
 the same fit functions described in~\cite{ALICEDmespp7Tev}.
 
+
+\begin{figure}[h]
+\centering
+{\includegraphics[width=.32\linewidth]{figures/DplusPlotweff/InvMassDistributions_Dstar_Bins2to3.png}}
+{\includegraphics[width=.32\linewidth]{figures/DplusPlotweff/InvMassDistributions_Dstar_Bins4to6.png}}
+{\includegraphics[width=.32\linewidth]{figures/DplusPlotweff/InvMassDistributions_Dstar_Bins7to9.png}}
+{\includegraphics[width=.32\linewidth]{figures/DplusPlotweff/InvMassDistributions_Dstar_Bins10to10.png}}
+{\includegraphics[width=.32\linewidth]{figures/Dzero/InvMassDistributions_Dzero_Bins4to5.png}}
+{\includegraphics[width=.32\linewidth]{figures/Dzero/InvMassDistributions_Dzero_Bins6to8.png}}
+{\includegraphics[width=.32\linewidth]{figures/Dzero/InvMassDistributions_Dzero_Bins9to11.png}}
+{\includegraphics[width=.32\linewidth]{figures/Dzero/InvMassDistributions_Dzero_Bins12to12.png}}
+
+
+
+\caption{Invariant mass distribution of $D^0$, $\Dstar$ and $\Dplus$ in different $\text{p}_T$ regions. Left: $3< p_{T}^{\text{D}}< 5 GeV/c$, Mid: $5< p_{T}^{\text{D}}< 8 GeV/c$ , High: $8< p_{T}^{\text{D}}< 16 GeV/c$ and Very High: $16<p_{T}^{\text{D}}< 24 GeV/c$.}
+\label{fig:InvMass}
+\end{figure}
+\begin{figure}[h]
+
 %the selection of displaced-vertex topologies, achieved e.g. by requiring a significant
 %distance between the secondary vertex and the primary vertex of interation (decay length) and good
 %alignment  between the reconstructed D meson momentum and
@@ -54,6 +73,14 @@ ADD: CUT OPTIMIZATION PARAGRAPH FOR D0, WITH SOME PLOT- PUT A REFERENCE TO MY LA
 The angular correlation distribution may be affected, even for uncorrelated pair of particles, by structures not due to physical effects, but originating from the limited detector acceptance, as well as from angular inhomogeneities in the trigger and track reconstruction efficiencies as a function of $\Delta\phi$ and $\Delta\eta$.
 Effects of this kind are removed using the Event Mixing technique.
 In details, the analysis is executed on the same data sample of the standard one (called ``same event" analysis, SE), but the trigger particles found in each event are correlated to charged particles reconstructed in different events (``Mixed Events'' analysis, ME) with similar characteristic, in particular concerning the event multiplicity and z position of the primary vertex (see Section \ref{MEsection}. \\
+
+\begin{figure}
+\centering
+{\includegraphics[width=.30\linewidth]{figures/Dzero/CorrSEandME_Dzero_Canvas_PtIntBins9to11_pool7_thr0.3to99.0.png}}
+
+ \caption{Example of SE, ME, SE/ME 2D plots from Corrected azimuthal correlation 2D plots from ${D}^0$} 
+\label{fig:DzeroME}
+\end{figure}
 
 The differential yield of associated particles per trigger particle is obtained by
 \begin{linenomath}
@@ -104,6 +131,13 @@ for background candidates in this region is extracted and normalized with respec
 estimated from the mass fit. This normalized background correlation distribution is then subtracted from the
 raw signal one to obtain the signal correlation distribution. The normalization factor is the ratio of the number of background candidates under the signal peak (obtained bin-counting the candidates in the signal region and subtracting the integral of the fit function for the signal only, in the same range\footnote{With this procedure, the statistical fluctuations in the signal region are treated as background fluctuations. This is acceptable, since in most of the $\pt$ ranges B $>$ S, hence B fluctuations are higher than S fluctuations.} {\bf NOTE: THIS, AT LEAST FOR D0, SHALL BE REVERSED, SINCE WITH OPTIMIZED CUTS S $>$B IN MOST BINS. FOR D+ AND D*, PLEASE CHECK!!!}) over the number of background candidates in the sidebands (obtained via bin-counting in the sideband region). This normalized background correlation distribution is then subtracted from the
 raw signal one to obtain the signal correlation distribution.
+
+\begin{figure}
+\centering 
+\includegraphics{[width=.30\linewidth]{figures/Dzero/h1D_Dzero_Canvas_Normalized_PtIntBins9to11_PoolInt_thr0.3to99.0.png}}
+\includegraphics{[width=.30\linewidth]{figures/Dzero/h1D_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1.0to99.0.png}}
+
+\ens{figure}
 
 ADD PLOT OF 1D SIGNAL, SB, SIGNAL-SB REGION (I UPLOADED ONE EXAMPLE FOR D0)
 
