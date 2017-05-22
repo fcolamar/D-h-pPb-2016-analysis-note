@@ -14,7 +14,7 @@ Table 1 shows the list of runs used for the analysis, for each of the data takin
 \begin{tabular}{ p{1.2cm} | p{4.2cm} |  p{7cm} |  p{1.2cm}}
 {\normalsize \textbf {Type}} &       {\normalsize \textbf {Production}} &       {\normalsize \textbf {Run list}} & {\normalsize \textbf {nEvents}} \\
 \\ \hline
-Monte-Carlo & LHC17d2a$\_$fast$\_$new/AOD (c/b enriched), LHC17a2b$\_$fast (MB), LHC17a2b$\_$cent$\_$woSDD (MB) &265525, 265521, 265501, 265500, 265499, 265435, 265427, 265426, 265425, 265424, 265422, 265421, 265420, 265419, 265388, 265387, 265385, 265384, 265383, 265381, 265378, 265377, 265344, 265343, 265342, 265339, 265338, 265336, 265335, 265334, 265332, 265309, 267165, 267164, 267163, 267166 = \textbf{[22 runs]} & ??M\\
+Monte-Carlo & LHC17d2a$\_$fast$\_$new/AOD (c/b enriched), LHC17a2b$\_$fast (MB), LHC17a2b$\_$cent$\_$woSDD (MB) &265525, 265521, 265501, 265500, 265499, 265435, 265427, 265426, 265425, 265424, 265422, 265421, 265420, 265419, 265388, 265387, 265385, 265384, 265383, 265381, 265378, 265377, 265344, 265343, 265342, 265339, 265338, 265336, 265335, 265334, 265332, 265309, 267165, 267164, 267163, 267166 = \textbf{[22 runs]} & 50M\\
 \\ \hline
 
 \multirow{7}{*}{} Data&``LHC16q, pass1$\_$CENT$\_$woSDD/AOD" & 265525, 265521, 265501, 265500, 265499, 265435, 265427, 265426, 265425, 265424, 265422, 265421, 265420, 265419, 265388, 265387, 265385, 265384, 265383, 265381, 265378, 265377, 265344, 265343, 265342, 265339, 265338, 265336, 265335, 265334, 265332, 265309 = \textbf{[32 runs]}& 261M total\\
@@ -37,3 +37,38 @@ pile-up from collisions in the same bunch crossing is below 2\% per triggered ev
 rejected, which effectively removes the impact of in-bunch pile-up events on the analysis. Out-of-bunch tracks are effectively rejected by the request of at least one point in the SPD, which has a very limited time acquisition window (300 ns). Indeed, though the default associated track selection requires a minimum of 2 points in the ITS, as it will be shown later on full compatibility of the corrected results with 2 and 3 minimum ITS clusters is obtained. For FAST and CENT_woSDD samples, the latter case indirectly forces the presence of a point in the SPD. 
 
 {\bf A SMALL DISCUSSION FOR wsdd VS wosdd SAMPLES MUST BE DONE, WITH THE REASONING OF OUR FINAL CHOICE (WITH PLOTS FOR AT LEAST ONE MESON, BUT BETTER BOTH D+ and D*). YOU CAN PICK THE PLOTS FROM SHYAM AND MARIANNA'S TALKS!!} 
+
+Since data collected during p-Pb 2016 data taking are distinguished into two categories: one that contains the SDD information (wSDD sample) and a second one that lacks this information (woSDD and FAST samples), a study of performance of the D-hadron correlation analysis with respect to the data sample employed has been carried out for $\Dstar$ and $\Dplus$ mesons. 
+
+For this reason, the D-hadron correlation distribution has been compared on LHC16q$\_$pass1$\_$CENT$\_$wSDD and LHC16q$\_$pass1$\_$CENT$\_$woSDD and the relative statistical uncertainty has been estimated in order to understand if it was better to perform the analysis separately on the two data sample, applying different corrections, or not.
+In particular, it was crucial for the correlation analysis involving the $\Dstar$ meson because the efficiency tracking reconstruction of the pion is $\sim10\%$ higher employing also the SDD information.
+Figure \ref{wSSvswoSDD} shows the normalized azimuthal correlation distribution for low, mid and high $\pt$ for $\Dstar$ meson. Blu points are referred to the woSS sample while red points represents wSDD data. Figure \ref{wSSvswoSDDuncertainty} shows the relative statistical uncentainty extracted from the azimuthal correlation distributions for the $\Dstar$ in different kinematic ranges.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/AzimCorrDistr_Dstar_Canvas_PtIntBins2to3_PoolInt_thr0dot3to99dot0_Superimp.png}
+\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/AzimCorrDistr_Dstar_Canvas_PtIntBins4to6_PoolInt_thr0dot3to99dot0_Superimp.png}
+
+\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/AzimCorrDistr_Dstar_Canvas_PtIntBins7to9_PoolInt_thr0dot3to99dot0_Superimp.png}
+\caption{Normalized azimuthal correlation distribution of $\Dstar$ for low $\pt$ ($3 < \pt(\Dstar) < 5 $GeV/c) on the top panel, mid $\pt$ ($5 < \pt(\Dstar) < 8 $GeV/c) on the middle panel and high $\pt$ ($8 < \pt(\Dstar) < 16 $GeV/c) on the bottom panel with a $\pt$ threshold for associated tracks of $\pt(assoc) > 0.3$ GeV/c. Blu points are referred to the woSS sample while red points represent wSDD data}
+\label{wSSvswoSDD}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/Uncertanty_AzimCorrDistr_Dstar_Canvas_PtIntBins2to3_PoolInt_thr0dot3to99dot0.png}
+\includegraphics[width=0.8\linewidth]{figures/wSDD_vs_woSDD/Uncertanty_AzimCorrDistr_Dstar_Canvas_PtIntBins4to6_PoolInt_thr0dot3to99dot0.png}
+
+\includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/Uncertanty_AzimCorrDistr_Dstar_Canvas_PtIntBins7to9_PoolInt_thr0dot3to99dot0.png}
+\caption{Statistical uncertainty extracted from the azimuthal correlation distribution of $\Dstar$ with associated charged particles. Top panel: $3 < \pt(\Dstar) < 5 $GeV/c.
+Mid panel: $5 < \pt(\Dstar) < 8 $GeV/c. Bottom panel: $8 < \pt(\Dstar) < 16 $GeV/c.
+Blu line is referred to the woSS sample while the red line represents wSDD data}
+\label{wSSvswoSDDuncertainty}
+\end{figure}
+
+It can be observed that the data sample that includes the SDD information is characterized by a $\sim 10-15\%$ of major statistics in each $\pt$ ranges analyzed. This difference is related to the major efficiency in track reconstruction with the wSDD sample (a major number of tracks survives to the selection request of 3 tracks in the ITS).
+
+As a result, the wSDD sample is also affected by a minor statistical uncertainty due to the tracking efficiency (estimated to be $\sim 5-7\%$), to the major number of signal entries ($\sim 10-12\%$) in the invariant mass distributions (estimated to be $\sim 3.5 - 6\%$) and to the sideband subtraction that, actually, is more difficult to estimate.
+The overall statistical uncertainty difference resulting from the comparison is not enough to justify the implementation of two different analysis and two subsequent different corrections either for $\Dstar$ and $\Dplus$.
+
+
