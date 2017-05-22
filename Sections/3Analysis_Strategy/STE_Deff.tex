@@ -1,26 +1,17 @@
+{\bf \normalsize (i) Tracking efficiency} - The tracking efficiency was calculated by obtaining the ratio between the yield at the reconstructed level and generated level, for a defined ``type" of particles (in our case non-identified particles) and it is estimated differentially in p$_T$, $\eta$, and z$_{vtx}$ of the event.\\
 
-
-{\bf \normalsize (i) Tracking efficiency}: is calculated by obtaining the ratio between the yield at the reconstructed level and generated level, for a defined ``type" of particles (in our case non-identified particles) and it is estimated differentially in p$_T$, $\eta$, and z$_{vtx}$ of the event.\\
-{\bf Implementation }: tracking efficiency maps are produced as TH3D histograms (p$_T$, $\eta$, z$_{vtx}$) obtained from MC analysis on the minimum-bias samples LHC17a2b$\_$fast and LHC17a2b$\_$cent$\_$woSDD, and applying at reconstructed level the track selections (summarized in Table.~\ref{table:effCuts}). These efficiency maps are used in the analysis tasks to extract single track efficiencies; each correlation pairs found in the data analysis is inserted in correlation plots with a weight of {\bf 1/efficiency value}. Example plots of the tracking efficiencies as a function of p$_T$ are shown in Fig.~\ref{fig:trackeff}.
-
-
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[scale=0.35]{figures/pPb_STE_1D_pT_all_DCA.png}
-%	\caption{Charged particle $p_T$ efficiency for different DCA values.}
-%	\label{fig:trackeff}	
-%\end{figure}
-
+Tracking efficiency maps were produced as TH3D histograms (p$_T$, $\eta$, z$_{vtx}$) obtained from MC analysis on the minimum-bias samples LHC17a2b$\_$fast and LHC17a2b$\_$cent$\_$woSDD, and applying at reconstructed level the track selections (summarized in Table.~\ref{table:effCuts}). These efficiency maps were used in the analysis tasks to extract single track efficiencies; each correlation pairs found in the data analysis was inserted in correlation plots with a weight of {\bf 1/efficiency value}.  Plots of the $\pt$ dependence of the tracking efficiency for two different track selections are shown in Fig.~\ref{fig:trackeff}.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.35]{figures/Effs/TrackEfficiencyPlots_zVtxbin5_a2b_default_1Dmap.png}
-	\caption{$p_T$ efficiency map for standard track selection.}
-	\label{fig:trackeffvsspecies}	
+	\includegraphics[scale=0.35]{figures/Effs/TrackEfficiency_pPb2016_defaultCuts.png}
+    \includegraphics[scale=0.35]{figures/Effs/TrackEfficiency_pPb2016_Min3ITSCls.png}
+	\caption{$p_T$ efficiency map for standard track selection (2 ITS clusters) on top panel, and alternate track selection, used for systematics (3 ITS clusters, filterbit4, ITS refit) on bottom panel.}
+	\label{fig:trackeff}	
 \end{figure}
 
 \newpage
-Details of cuts at event level and particle selection at different steps are listed in Table.~\ref{table:effCuts} . \\
+Details of cuts at event level and particle selection at different steps are listed in Table ~\ref{table:effCuts} . \\
 \begin{table}[h]
 \small
 \centering % used for centering table
@@ -64,10 +55,10 @@ Details of cuts at event level and particle selection at different steps are lis
 																	&SetDCAToVertex2D(kFALSE) \\
 																	&SetMinNCrossedRowsTPC(70)\\
 																	&SetMinRatioCrossedRowsOverFindableClustersTPC(0.8)\\
-																	&SetMinNClustersITS(3)\\
+																	&SetMinNClustersITS(2)\\
 																	&SetMaxChi2PerClusterTPC(4)\\
 																	&SetMaxDCAToVertexZ(1) \\
-																	&SetMaxDCAToVertexXY(0.25) \\
+																	&SetMaxDCAToVertexXY(1) \\
 																	&SetRequireTPCRefit(TRUE) \\
 																	&SetRequireITSRefit(FALSE) \\
 
@@ -82,30 +73,35 @@ Details of cuts at event level and particle selection at different steps are lis
 \label{table:effCuts}	
 \end{table}
 
+{\bf \large (ii) D Meson efficiency} - Due to limited statistics, the correlation analysis is performed in quite wide p$_\mathrm{T}$ bins and in each of them the reconstruction and selection efficiency of D mesons is not flat, in particular in the lower $\pt$ region. We correct for the p$_\mathrm{T}$ dependence of the trigger efficiency within each p$_\mathrm{T}$-bin.
 
-{\bf \large (ii) D Meson efficiency} - Due to limited statistics, the correlation analysis is performed in quite wide p$_\mathrm{T}$ bins and in each of them the reconstruction and selection efficiency of D mesons is not flat (Fig.~\ref{fig:dpluseff},~\ref{fig:d0eff}), in particular in the lower $\pt$ region. We correct for the p$_\mathrm{T}$ dependence of the trigger efficiency within each p$_\mathrm{T}$-bin.
-This correction is applied online, by using a map of D meson efficiency as a function of p$_\mathrm{T}$ and event multiplicity (in terms of SPD tracklets in $|\eta|<1$) extracted from the enriched Monte Carlo sample LHC17d2a$\_$fast$\_$new.
-While running the analysis, each correlation entry is weighted by {\bf 1/trigger efficiency}. It was observed that multiplicity dependence of the efficiency does not bias the extraction of the signal yield from the invariant mass distributions (which, as anticipated, are also weighted in the same manner). Efficiency plots for $\Dzero$, $\Dplus$ and $\Dstar$ mesons are shown in Fig.~\ref{fig:doeff}, Fig.~\ref{fig:dpluseff} and ~\ref{fig:dstareff}.
+This correction is applied online, by using a map of D meson efficiency as a function of p$_\mathrm{T}$ and event multiplicity (in terms of SPD tracklets in $|\eta|<1$) extracted from the enriched Monte Carlo sample LHC17d2a$\_$fast$\_$new. The $\eta$ dependence was neglected due to the statistics of the available Monte Carlo sample, which avoided the possibility of performing a 3D study.
+
+To properly count the number of trigger particles used to normalize the correlation distributions, $N_\text{trig}$, each D meson is weighted with the inverse of its efficiency
+in the invariant mass distribution. The main role of the correction for the D meson efficiency is to account for the $\pt$ dependence of the correlation distribution within a given D meson $\pt$ interval. Indeed, only the $\pt$ shape of the D meson efficiency within the correlation $\pt^{\rm trig}$ ranges is relevant while the average value
+in the $\pt$ range is simplified due to the normalization of the correlation distribution to the number of trigger particles.
+
+It was observed that multiplicity dependence of the efficiency does not bias the extraction of the signal yield from the invariant mass distributions (which, as anticipated, are also weighted in the same manner). Efficiency plots for $\Dzero$, $\Dplus$ and $\Dstar$ mesons are shown in Figs.~\ref{fig:dEffPrompt} and ~\ref{fig:dEffFD}.
 
 \begin{figure}[!htp]     %da c
 	\centering
 %Marianna
-        \includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_DPlus_c_Ref_wLimAcc_Plot.png} 
+    \includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_DPlus_c_Ref_wLimAcc_Plot.png}
 	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_DPlus_c_Ref_wLimAcc_Plot.png}  % by Fabio
-	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_DStar_c_Ref_wLimAcc_Plot.png} 
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_DStar_c_Ref_wLimAcc_Plot.png}
 	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_DStar_c_Ref_wLimAcc_Plot.png}  % by Fabio
-	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_Dzero_c_Ref_wLimAcc_Plot.png} 
+	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_Dzero_c_Ref_wLimAcc_Plot.png}
 	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_Dzero_c_Ref_wLimAcc_Plot.png}  % by Fabio
 	
 	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_3to4GeV.png}
 	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_5to6GeV.png}
 	%\includegraphics[width=.30\linewidth]{figures/D0Eff_ProjMult_8to12GeV.png}
-\caption{Top panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of prompt $D^{+}$ meson efficiency. 
-Mid panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of prompt $D^{*+}$ meson efficiency. 
+\caption{Top panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of prompt $D^{+}$ meson efficiency.
+Mid panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of prompt $D^{*+}$ meson efficiency.
 Bottom panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of prompt $D^{0}$ meson efficiency.
 %s: multiplicity dependence of $D^0$ meson efficiency for three $D^0$ p$_\mathrm{T}$ ranges: 3-4 GeV/$c$ (left), 5-6 GeV/$c$ (center), 8-12 GeV/$c$ (right). For tracklet multiplicity$>$ 120, due to the limited statistics, the efficiency value is fixed to the one obtained for 90$<$tracklet multiplicity$<$120.
 }
-	\label{fig:d0eff}	
+	\label{fig:dEffPrompt}	
 \end{figure}
 
 \begin{figure}[h]   %da B
@@ -120,12 +116,12 @@ Bottom panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ depende
 	  % by Fabio
 	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_2D_Dzero_b_Ref_wLimAcc_Plot.png}
 	\includegraphics[width=.48\linewidth]{figures/Effs/EfficiencyMap_1D_Dzero_b_Ref_wLimAcc_Plot.png}
-	\caption{Top panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of feed-down $D^{+}$ meson efficiency. 
-Mid panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of feed-down $D^{*+}$ meson efficiency. 
+	\caption{Top panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of feed-down $D^{+}$ meson efficiency.
+Mid panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of feed-down $D^{*+}$ meson efficiency.
 Bottom panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of feed-down $D^{0}$ meson efficiency.}
-	\label{fig:dpluseff}	
+	\label{fig:dEffFD}	
 \end{figure}
-
+\clearpage
 %\begin{figure}[!htp]
 	%\centering
 %Marianna
@@ -137,4 +133,4 @@ Bottom panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ depende
 %\caption{Top panel: (p$_\mathrm{T}$, multiplicity) dependence (left) and p$_T$ dependence (right) of prompt $\Dstar$ meson efficiency. Bottom panels: multiplicity dependence of $\Dstar$ meson efficiency for three $\Dstar$ p$_\mathrm{T}$ ranges: 3-4 GeV/$c$ (left), 5-6 GeV/$c$ (center), 8-12 GeV/$c$ (right). For tracklet multiplicity$>$ 120, due to the limited statistics, the efficiency value is fixed to the one obtained for 90$<$tracklet multiplicity$<$120.}
 %	\label{fig:dstareff}	
 %\end{figure}
-%\newpage 
+%\newpage
