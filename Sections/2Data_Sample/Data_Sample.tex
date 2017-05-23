@@ -39,7 +39,7 @@ rejected, which effectively removes the impact of in-bunch pile-up events on the
 Since data collected during p-Pb 2016 data taking are distinguished into two categories - one including SDD detector (CENT$\_$wSDD sample) and a second one without the SDD in the reconstruction, or in the acquisition (CENT$\_$woSDD and FAST samples, repsectively), a study of performance of the D-hadron correlation analysis with respect to the data samples employed has been carried out for $\Dstar$ and $\Dplus$ mesons (more sensitive to the presence of the SDD w.r.t. the $\Dzero$, due to their reconstruction from three decay tracks).
 
 For this reason, the D-hadron correlation distribution has been compared on LHC16q$\_$pass1$\_$CENT$\_$wSDD and LHC16q$\_$pass1$\_$CENT$\_$woSDD and the relative statistical uncertainty has been estimated in order to understand if it was better to perform the analysis separately on the two data sample, applying in this case different corrections, or not.
-In particular, it was crucial for the correlation analysis involving the $\Dstar$ meson because the efficiency tracking reconstruction of the soft pion is $\approx 10\%$ higher employing also the SDD information.
+In particular, it was crucial for the correlation analysis involving the $\Dstar$ meson because the track reconstruction efficiency of the soft pion is $\approx 10\%$ higher employing also the SDD information.
 Figure \ref{wSSvswoSDD} shows the normalized azimuthal correlation distribution for low, mid and high $\pt$ for $\Dstar$ meson. Blue points are referred to the woSDD sample while red points represents wSDD data. Figure \ref{wSSvswoSDDuncertainty} shows the relative statistical uncentainty extracted from the azimuthal correlation distributions for the $\Dstar$ in different kinematic ranges.
 
 \begin{figure}[!h]
@@ -48,7 +48,7 @@ Figure \ref{wSSvswoSDD} shows the normalized azimuthal correlation distribution 
 \includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/AzimCorrDistr_Dstar_Canvas_PtIntBins4to6_PoolInt_thr0dot3to99dot0_Superimp.png}
 
 \includegraphics[width=0.8\linewidth, height=6cm]{figures/wSDD_vs_woSDD/AzimCorrDistr_Dstar_Canvas_PtIntBins7to9_PoolInt_thr0dot3to99dot0_Superimp.png}
-\caption{Normalized azimuthal correlation distribution of $\Dstar$ for low $\pt$ ($3 < \pt(\Dstar) < 5$ GeV/c) on the top panel, mid $\pt$ ($5 < \pt(\Dstar) < 8$ GeV/c) on the middle panel and high $\pt$ ($8 < \pt(\Dstar) < 16$ GeV/c) on the bottom panel with a $\pt$ threshold for associated tracks of $\pt(assoc) > 0.3$ GeV/c. Blu points are referred to the woSDD sample while red points represent wSDD data.}
+\caption{Normalized azimuthal correlation distribution of $\Dstar$ for low $\pt$ ($3 < \pt(\Dstar) < 5$ GeV/c) on the top panel, mid $\pt$ ($5 < \pt(\Dstar) < 8$ GeV/c) on the middle panel and high $\pt$ ($8 < \pt(\Dstar) < 16$ GeV/c) on the bottom panel with a $\pt$ threshold for associated tracks of $\pt(assoc) > 0.3$ GeV/c. Blue points are referred to the woSDD sample while red points represent wSDD data.}
 \label{wSSvswoSDD}
 \end{figure}
 
@@ -64,12 +64,12 @@ Blue line is referred to the woSDD sample while the red line represents wSDD dat
 \label{wSSvswoSDDuncertainty}
 \end{figure}
 
-It can be observed that the data sample that includes the SDD information is characterized by $\approx 10-15\%$ more statistics in each $\pt$ ranges analyzed. This difference is related to the larger efficiency in track reconstruction with the wSDD sample - a larger number of tracks survives to the selection request of 3 tracks in the ITS, which is part of the selection requests applied on the previous D-h analysis.
+It can be observed that the data sample that includes the SDD information is characterized by $\approx 10-15\%$ more statistics in each $\pt$ ranges analyzed. This difference is related to the larger efficiency in track reconstruction with the wSDD sample - a larger number of tracks survives to the selection request of 3 points in the ITS, which is part of the selection requests applied on the previous D-h analysis.
 
 As a result, the wSDD sample is also affected by a slightly lower relative statistical uncertainty (about 12-15\%) due to several reasons: the larger tracking efficiency, the major number of signal entries in the invariant mass distributions and a slight increase of S/B, which reflects in a slight decrease of uncertainty from the sideband subtraction.
 It has also to be considered that, on the full sample including also the FAST cluster, the increase in performance would be further reduced.
 The overall statistical uncertainty difference resulting from the comparison is not enough to justify the implementation of two different analysis and two subsequent different corrections either for $\Dstar$ and $\Dplus$.
 
-Anyway, to cope with the lower tracking efficiency w.r.t. 2013 data sample, after this study it was decided to reduce the ITS request for the associated tracks from 3 (used on 2013 data) to 2 ITS clusters ad default selection criterion.
+Anyway, to cope with the lower tracking efficiency w.r.t. 2013 data sample, after this study it was decided to reduce the ITS request for the associated tracks from 3 (used on 2013 data) to 2 ITS clusters as default selection criterion.
 
 
