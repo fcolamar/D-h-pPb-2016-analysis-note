@@ -92,6 +92,10 @@ based on Pythia as described more in detail in the next section. The background-
 event-mixing corrected correlations are multiplied by a purity factor to remove this contribution.
 
 \item
+\underline{\bf Correction for bias on B to D decay topologies}
+The presence of the topological cuts for the D-meson selection indirecly induce a bias on the topology of the B to D recay topologies, favouring cases with a small opening angle between the D-meson and the other tracks from the B decay. This affects the feed-down component of the data correlation distributions. This effect is corrected for with a procedure described in the subsection \ref{MCclosure}
+
+\item
 \underline{\bf Correction for feed-down of D meson from b-hadron decay}
 The selection strategy employed for the D meson candidates selection %to increase the signal over the combinatorial background
 enhances the fraction of reconstructed D mesons coming from the decay of a b-hadron. Typical values, with the cuts used for the D-meson selection, are of the order of 10\% or less. The correlation distribution of these secondary D mesons will be sensitive to the properties of beauty jets and beauty hadron decay, which in general differ from those relative to charm jets and hadrons. The procedure used to subtract this contribution is described in the next paragraphs of this section.
@@ -217,9 +221,11 @@ Figures \ref{fig:DplusSEbyMEPlots1}, \ref{fig:DplusSEbyMEPlots2}, \ref{fig:Dplus
 \subsubsection{Tracking and D-meson trigger efficiency}
 \input{./Sections/3Analysis_Strategy/STE_Deff.tex}
 
-
-\subsubsection{Beauty feed-down}
-\input{./Sections/3Analysis_Strategy/BeautyFeedDown.tex}
+\subsubsection{Correction for bias on B->D decay topologies}
+\input{./Sections/3Analysis_Strategy/MCclosureModulation.tex}
 
 \subsubsection{Secondary track contamination}
 \input{./Sections/3Analysis_Strategy/Secondaries.tex} 
+
+\subsubsection{Beauty feed-down}
+\input{./Sections/3Analysis_Strategy/BeautyFeedDown.tex}
