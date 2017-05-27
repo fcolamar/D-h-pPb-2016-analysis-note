@@ -2,7 +2,7 @@
 The secondary tracks inside the associated track sample, due to interaction of primary track with the detector material or to decays of strange hadrons, are mostly removed by the DCA cuts applied during the cut selection phase (DCA($xy$) $<$ 1 cm, DCA($z$) $<$ 1 cm).
 Anyway, a small fraction of secondary tracks survives this cut, and the data correlation distributions have to be corrected for this residual contamination.
 The fraction of surviving secondary tracks is evaluated via a study on the LHC17d2a$\_$fast$\_$new sample, by counting the number of tracks accepted by the selection whose corresponding generated-level track doesn't satisfy the IsPhysicalPrimary() call, and dividing this number by the total numner of accepted tracks.
-The outcome of the check is reported in Figure \ref{fig:secnumber}. As it's visible, no more than 5\% secondary tracks pass the selection. Moreover, the fraction of residual secondary tracks is flat along the $\Delta\phi$ axis, as shown, for exemplary $\pt$ regions, in Figure \ref{fig:secdPhi}, where the inhomogeneities are always below 1\%.
+The outcome of the check is reported in Figure \ref{fig:secnumber}. As it's visible, no more than 5\% secondary tracks pass the selection. Moreover, the fraction of residual secondary tracks is flat along the $\Delta\varphi$ axis, as shown, for exemplary $\pt$ regions, in Figure \ref{fig:secdPhi}, where the inhomogeneities are always below 1\%.
 For this reason, it is possible to directly scale the data correlation distributions by their purity fraction (i.e. 1 - secondary contamination). This is done with an associated $\pt$ dependence, due to the increase of the purity with the track $\pt$, while the purity fraction is taken flat versus the D-meson $\pt$.
 The purity values that were choosen are the following:
 \begin{itemize}
@@ -35,7 +35,7 @@ The purity values that were choosen are the following:
 	\includegraphics[width=.48\linewidth]{figures/SecTracks/DeltaPhi_5to8_03to99_RatioSecOverAll.png}
     \includegraphics[width=.48\linewidth]{figures/SecTracks/DeltaPhi_8to16_03to99_RatioSecOverAll.png}
     \includegraphics[width=.48\linewidth]{figures/SecTracks/DeltaPhi_16to24_03to99_RatioSecOverAll.png}
-	\caption{$\Delta\phi$ dependence of the fraction of secondary tracks in the $\Dzero$-h correlation distributions. The four panel show the fractions for the D-meson $\pt$ ranges: 3-5, 5-8, 8-16, 16-24, respectively. The associated track $\pt$ ranges is the integrated one, i.e. $\pt > 0.3$ GeV/c.}
+	\caption{$\Delta\varphi$ dependence of the fraction of secondary tracks in the $\Dzero$-h correlation distributions. The four panel show the fractions for the D-meson $\pt$ ranges: 3-5, 5-8, 8-16, 16-24, respectively. The associated track $\pt$ ranges is the integrated one, i.e. $\pt > 0.3$ GeV/c.}
 	\label{fig:secdPhi}	
 \end{figure}
 

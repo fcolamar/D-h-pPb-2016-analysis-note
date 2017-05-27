@@ -26,7 +26,7 @@ The panels show the ranges: $3 < \pt$(D)$ < 5$ GeV/c, $0.3 < \pt$(assoc)$ < 1$ G
 \label{fig:MC_Reco}
 \end{figure}
 
-The consistency check we performed was to verify whether, after having applied all the corrections to the azimuthal correlation plots at reconstructed level, the results were compatible with the ones at kinematic level. Hence, the ratios of fully corrected reconstructed plots over kinematic plots were evaluated in all the $D^0$ $p_\text{T}$ bins and for the various $p_\text{T}$ thresholds for the associated tracks, separating the contributions for the different origins of particles and triggers. The ratios, shown in Figure~\ref{fig:MC_Ratios}, denote a good compatibility with 1, within the uncertainties, apart from {\bf slight divergencies of the average value of the ratio at higher associated track $\pt$ ranges, of about 3\% (value introduced as a systematic uncertainty flat in $\Delta\phi$), and} some structures in the near side region for the beauty origin case.
+The consistency check we performed was to verify whether, after having applied all the corrections to the azimuthal correlation plots at reconstructed level, the results were compatible with the ones at kinematic level. Hence, the ratios of fully corrected reconstructed plots over kinematic plots were evaluated in all the $D^0$ $p_\text{T}$ bins and for the various $p_\text{T}$ thresholds for the associated tracks, separating the contributions for the different origins of particles and triggers. The ratios, shown in Figure~\ref{fig:MC_Ratios}, denote a good compatibility with 1, within the uncertainties, apart from {\bf slight divergencies of the average value of the ratio at higher associated track $\pt$ ranges, of about 3\% (value introduced as a systematic uncertainty flat in $\Delta\varphi$), and} some structures in the near side region for the beauty origin case.
 These structures were already found in the pp 2010 and p-Pb 2013 analysis, and it was verified that they are induced our topological selection for the D mesons. Indeed, in cases in which the D meson triggers come from B hadrons, applying the topological cuts (especially the cosine of the pointing angle) tends to favour cases with a small angular opening between the products of the B hadron decay (i.e. the D meson trigger itself and other particles), with respect to cases where the B decay particles are less collinear.
 
 \begin{figure}
@@ -44,19 +44,21 @@ In the Monte Carlo closure test, this situation is reflected in the correlation 
 These structures are prominent at low $D^0$ $p_\text{T}$, where the topological cuts are tighter, and tend to disappear at higher $\pt$, where the selections are released. They are also larger in the higher associated track $\pt$ ranges, where the fraction of B-hadron decay tracks dominate the overall correlation distributions.
 
 The data correlation distribution need to be corrected for this bias, and in particular for the enhancement of b-origin correlation pairs at the centre of the near side region, which would influence the near-side peak features.
-In order to do this, the amount of the b-origin excess is evaluated from the Reco/Kine ratio, by considering the b-$\Dzero$-all tracks case (dark green points). The excess at Reco level (affecting data) is quantified as a $\Delta\phi$ modulation for the three points an each side of the $\Delta\phi = 0$ value. This is done separately in each $\pt$ range.
+In order to do this, the amount of the b-origin excess is evaluated from the Reco/Kine ratio, by considering the b-$\Dzero$-all tracks case (dark green points). The excess at Reco level (affecting data) is quantified as a $\Delta\varphi$ modulation {\bf modul} for the five points an each side of the $\Delta\varphi = 0$ value (or, equivalently, on the first five points of the reflected distributions, which start from $\Delta\varphi=0$. This is done separately in each $\pt$ range.
 Then, the correction is done by applying this modulation to the data correlation distributions, but taking into account that only the correlation entries from B$\rightarrow$D are affected, while the c$\rightarrow$D correlations need to be left unaltered.
-On data, the B$\rightarrow$D correlation pairs are a fraction (1-$\fprompt$) of the total.
-In addition, the amplitude of B$\rightarrow$D correlation pattern with respect to the overall correlation distributions is:
+In particular, it has to be considered that:
+\begin{itemize}
+\item On data, the B$\rightarrow$D correlation pairs are only a fraction (1-$\fprompt$) of the total.
+\item The amplitude of B$\rightarrow$D$|_{\rm amplit}$ correlation pattern is different (greater) than the amplitude of the c$\rightarrow$D$|_{\rm amplit}$ correlation pattern:
+\end{itemize}
+
+Thus, the following equation is applied to get the corrected $C(\Delta\varphi)_{\rm corr}$ data points starting from the raw ones, $C(\Delta\varphi)_{\rm raw}$:
 \begin{equation}
-\frac{{\rm B}\rightarrow{\rm D}_{\rm amplitude}}{({\rm B+c})\rightarrow{\rm D}_{\rm amplitude}} = \frac{{\rm B}\rightarrow{\rm D}_{\rm amplitude}}{{\rm B}\rightarrow{\rm D}_{\rm amplitude} \cdot (1-\fprompt) + {\rm c}\rightarrow{\rm D}_{\rm amplitude} \cdot \fprompt}
+C(\Delta\varphi)_{\rm corr} = C(\Delta\varphi)_{\rm raw} \cdot [\frac{{\rm c}\rightarrow{\rm D}|_{\rm amplit}}{{\rm (B+c)}\rightarrow{\rm D}|_{\rm amplit}} \cdot f_{\rm prompt} + \frac{{\rm B}\rightarrow{\rm D}|_{\rm amplit}}{{\rm (B+c)}\rightarrow{\rm D}|_{\rm amplit}} \cdot (1-f_{\rm prompt})\cdot\frac{1}{\bf modul}]
 \end{equation}
-where the two amplitudes are evaluated from the Monte Carlo distributions of Figure \ref{fig:MC_Reco}, and $\fprompt$ with the procedure described in \ref{feeddown}
-To account for these features, and have the correction applied only on the B$\rightarrow$D correlations, the modulations extracted by the Reco/Kine ratios are thus rescaled by the factor:
-\begin{equation}
-(1 - \fprompt) \cdot \frac{{\rm B}\rightarrow{\rm D}_{\rm amplitude}}{{\rm B}\rightarrow{\rm D}_{\rm amplitude} \cdot (1-\fprompt) + {\rm c}\rightarrow{\rm D}_{\rm amplitude} \cdot \fprompt}
-\end{equation}
-before being applied to the data points. The effect of the correction is a downward shift of the data points in the near-side region. The maximum value of the shift is of 8\%, at the centre of the near-side peak, for the lowest D-meson $\pt$ range ($5 < \pt < 8$ GeV/c) and the highest associated track $\pt$ range ($\pt > 3$ GeV/c). The typical values are instead of a couple of percentage points. The correction is zero in the highest D-meson $\pt$ range.
+where ${\rm (B+c)}\rightarrow{\rm D}|_{\rm amplit} = {\rm c}\rightarrow{\rm D}|_{\rm amplit} \cdot f_{\rm prompt} + {\rm B}\rightarrow{\rm D}|_{\rm amplit} \cdot (1-f_{\rm prompt})$, and where the two amplitudes are evaluated from the Monte Carlo distributions of Figure \ref{fig:MC_Reco} at reconstructed level (so, including the bias), and $\fprompt$ with the procedure described in \ref{feeddown}.
+Applying the {\bf modul} factor to the beauty part of the data correlation distributions brings its value back to the generated level case, effectively removing the bias.
+The effect of the correction is a shift of the data points in the near-side region (in general, downward in the first and second points, the upward in the others). The maximum value of the shift is of about 5\%, at the centre of the near-side peak, for the lowest D-meson $\pt$ range ($5 < \pt < 8$ GeV/c) and the highest associated track $\pt$ range ($\pt > 3$ GeV/c). The typical values are instead of a couple of percentage points. The correction is zero in the highest D-meson $\pt$ range.
 To take into account for possible inaccuracies in the definition of the modulations, or in their rescaling, a systematic uncertainty is  applied on the corrected data points (as described in the related section).
 
 \clearpage

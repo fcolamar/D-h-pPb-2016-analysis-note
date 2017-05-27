@@ -27,12 +27,12 @@ The D mesons are selected in the rapidity range varying from $|y|<0.5$ at low $\
 Particle pairs are formed by associating each trigger particle with
 the charged primary particles passing the track selection (excluding those coming from the decay of the D-meson candidate) in a specified $p^{assoc}_{T}$
 interval (which can overlap with the $\pt^{\rm trig}$ range) and in the pseudo-rapidity range $|\eta|<0.8$. For the $\Dzero$ meson, also the low-momentum pion tracks from feed-down of $\Dstar$ mesons are removed via 3$\sigma$ invariant mass cut on the $M(K\pi\pi)-M(K\pi)$ difference. This because these soft pion are not related to the charm quark fragmentation chain.
-For D meson candidates in the invariant mass signal region, defined by a $\pm$ 2$\sigma$ interval around the D meson mass, the azimuthal angle difference $\phi^{\rm assoc}-\phi^{\rm trigg}\equiv\Delta\phi$
+For D meson candidates in the invariant mass signal region, defined by a $\pm$ 2$\sigma$ interval around the D meson mass, the azimuthal angle difference $\varphi^{\rm assoc}-\varphi^{\rm trigg}\equiv\Delta\varphi$
 and the pseudorapidity difference $\eta^{\rm assoc}-\eta^{\rm trig}\equiv\Delta \eta$ are evaluated and stored to build two-dimensional correlation distribution. % in a multi-dimensional histogram.
 
 \item
 \underline{\bf Correction for limited acceptance and detector inhomogeneities with Event Mixing}
-The angular correlation distribution may be affected, even for uncorrelated pair of particles, by structures not due to physical effects, but originating from the limited detector acceptance, as well as from angular inhomogeneities in the trigger and track reconstruction efficiencies as a function of $\Delta\phi$ and $\Delta\eta$.
+The angular correlation distribution may be affected, even for uncorrelated pair of particles, by structures not due to physical effects, but originating from the limited detector acceptance, as well as from angular inhomogeneities in the trigger and track reconstruction efficiencies as a function of $\Delta\varphi$ and $\Delta\eta$.
 Effects of this kind are removed using the Event Mixing technique.
 In this technique, the analysis is executed on the same data sample of the standard one (called ``same event" analysis, SE), but the trigger particles found in each event are correlated to charged particles reconstructed in different events (``Mixed Events'' analysis, ME) with similar characteristic, in particular concerning the event multiplicity and z position of the primary vertex (see Section \ref{MEsection}). \\
 
@@ -40,15 +40,15 @@ The differential yield of associated particles per trigger particle is obtained 
 \begin{linenomath}
   \begin{equation}
     \label{2pcorr_incl}
-    \frac{1}{N_\text{trig}}\frac{\d^{2}N^\text{pair}}{\d\Delta\eta\, \d\Delta\phi}
-= B_{ME}(0,0)\times\frac{S(\Delta\eta,\Delta\phi)}{B_{ME}(\Delta\eta,\Delta\phi)},
+    \frac{1}{N_\text{trig}}\frac{\d^{2}N^\text{pair}}{\d\Delta\eta\, \d\Delta\varphi}
+= B_{ME}(0,0)\times\frac{S(\Delta\eta,\Delta\varphi)}{B_{ME}(\Delta\eta,\Delta\varphi)},
 \end{equation}
 \end{linenomath}
 where $N^\text{pair}$ is the total number of correlated D-hadron
-pairs. The functions $S(\Delta\eta,\Delta\phi)$ and
-$B_{ME}(\Delta\eta,\Delta\phi)$ are the signal and the mixed event
+pairs. The functions $S(\Delta\eta,\Delta\varphi)$ and
+$B_{ME}(\Delta\eta,\Delta\varphi)$ are the signal and the mixed event
 background distributions, respectively. The latter is normalized to its value in
-$(\Delta\eta,\Delta\phi)=(0,0)$, i.e. ($B(0,0)$).
+$(\Delta\eta,\Delta\varphi)=(0,0)$, i.e. ($B(0,0)$).
 Further details on the mixed-event correction are provided further on.
 
 \item
@@ -78,11 +78,11 @@ After filling the signal and background correlation distributions, it is necessa
 inverse of the product of the associated track and D meson reconstruction efficiency, $\epsilon_{trk}$ and $\epsilon_{trig}$. Further details are provided later on in this section.
 
 \item
-\underline{\bf Projection in $\Delta\phi$.}
+\underline{\bf Projection in $\Delta\varphi$.}
 The limited statistics available does not allow to study the two dimensional
-$(\Delta\eta,\Delta\phi)$ distribution, which is therefore projected to the $\Delta\phi$ axis by integrating on $|\Delta\eta| <$ 1. Despite, in principle, our maximum $\Delta\eta$ acceptance is of $|\Delta\eta| <$ 1.6, removing the large $|\Delta\eta|$ regions allow us to reject angular regions with very low statistics, where fluctuations would be amplified by a large mixed-event correction, and avoid the so-called wings effect.
+$(\Delta\eta,\Delta\varphi)$ distribution, which is therefore projected to the $\Delta\varphi$ axis by integrating on $|\Delta\eta| <$ 1. Despite, in principle, our maximum $\Delta\eta$ acceptance is of $|\Delta\eta| <$ 1.6, removing the large $|\Delta\eta|$ regions allow us to reject angular regions with very low statistics, where fluctuations would be amplified by a large mixed-event correction, and avoid the so-called wings effect.
 
-As the difference in the azimuthal angle is periodic ($\Delta \phi = 0 = 2\pi$), the $\Delta\phi$-range is limited to the essential range of 2$\pi$. The $\Delta \phi$-limits are chosen to be [$-\pi$/2,3$\pi$/2] in order to provide a good visibility of the correlation pattern, which peaks around 0 and $\pi$.
+As the difference in the azimuthal angle is periodic ($\Delta \varphi = 0 = 2\pi$), the $\Delta\varphi$-range is limited to the essential range of 2$\pi$. The $\Delta \varphi$-limits are chosen to be [$-\pi$/2,3$\pi$/2] in order to provide a good visibility of the correlation pattern, which peaks around 0 and $\pi$.
 
 \item
 \underline{\bf Correction for the contamination of secondary particles}
@@ -105,21 +105,21 @@ enhances the fraction of reconstructed D mesons coming from the decay of a b-had
 The properties of the azimuthal correlation distribution are quantified by
 fitting the distribution with a function composed of two Gaussian functions, modelling the near and the away side peaks, and
 a constant term describing the baseline. The mean of the Gaussian are fixed at
-$\Delta\phi = 0$ and $\Delta\phi = \pi$. To accomplish the $2\pi$ periodicity
-of the $\Delta\phi$ variable, the Gaussian functions
-are ``duplicated'' with mean at $\Delta\phi = 2\pi$ and $\Delta\phi = -\pi$.
+$\Delta\varphi = 0$ and $\Delta\varphi = \pi$. To accomplish the $2\pi$ periodicity
+of the $\Delta\varphi$ variable, the Gaussian functions
+are ``duplicated'' with mean at $\Delta\varphi = 2\pi$ and $\Delta\varphi = -\pi$.
 The fitting procedure is described in details in Section \ref{results}.
 
 
 %The integral of the near side peak and the away side peak
 %is dominated by the central parts of the peaks at
-%$\Delta \phi = 0$ and $\Delta \phi = \pi$, respectively. Thus, minor
+%$\Delta \varphi = 0$ and $\Delta \varphi = \pi$, respectively. Thus, minor
 %shape deviations at the side of the peak regions are  acceptable. In
 %the following, the fit function is introduced step by step.
-%The $\Delta \phi$ distribution can roughly be approximated by a
+%The $\Delta \varphi$ distribution can roughly be approximated by a
 %constant and two Gaussian functions with the periodicity condition.
-%As the $\Delta \phi$-distribution is a periodically continuing
-%distribution with $\Delta\phi = 0 = 2\pi$, the fit function has to
+%As the $\Delta \varphi$-distribution is a periodically continuing
+%distribution with $\Delta\varphi = 0 = 2\pi$, the fit function has to
 %be periodically continuing as well.
 
 \end{enumerate}
@@ -192,7 +192,7 @@ AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and AliAnalysi
 \begin{figure}[!ht]
 \centering
 %{\includegraphics[width=.95\linewidth]{figures/Dplus_low_dot5_SEbyME.png}}
- \caption{($\Delta \phi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for low $p_{T}$: $3 < p_{T}^{\text{D}^+} < 5 GeV/c$ with associated track $p_{T}$ threshold 0.3 GeV/c }
+ \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for low $p_{T}$: $3 < p_{T}^{\text{D}^+} < 5 GeV/c$ with associated track $p_{T}$ threshold 0.3 GeV/c }
 \label{fig:DplusSEbyMEPlots1}
 \end{figure}
 
@@ -202,14 +202,14 @@ AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and AliAnalysi
 \centering
 %Marianna
 %{\includegraphics[width=.95\linewidth]{figures/Dplus_mid_dot5_SEbyME.png}}
- \caption{($\Delta \phi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for mid $p_{T}$: $5< p_{T}^{\text{D}^+}< 8 GeV/c$ with associated track $p_{T}$ threshold 0.3 GeV/c }
+ \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for mid $p_{T}$: $5< p_{T}^{\text{D}^+}< 8 GeV/c$ with associated track $p_{T}$ threshold 0.3 GeV/c }
 \label{fig:DplusSEbyMEPlots2}
 \end{figure}
 
 \begin{figure}[!ht]
 \centering
 %{\includegraphics[width=.95\linewidth]{figures/Dplus_high_dot5_SEbyME.png}}
- \caption{($\Delta \phi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for high $p_{T}$: $8< p_{T}^{\text{D}^+}< 16 GeV/c$ with associcated track $p_{T}$ threshold 0.3 GeV/c }
+ \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for high $p_{T}$: $8< p_{T}^{\text{D}^+}< 16 GeV/c$ with associcated track $p_{T}$ threshold 0.3 GeV/c }
 \label{fig:DplusSEbyMEPlots3}
 \end{figure}
 
@@ -221,11 +221,11 @@ Figures \ref{fig:DplusSEbyMEPlots1}, \ref{fig:DplusSEbyMEPlots2}, \ref{fig:Dplus
 \subsubsection{Tracking and D-meson trigger efficiency}
 \input{./Sections/3Analysis_Strategy/STE_Deff.tex}
 
-\subsubsection{Correction for bias on B->D decay topologies}
+\subsubsection{Correction for bias on B to D decay topologies}
 \input{./Sections/3Analysis_Strategy/MCclosureModulation.tex}
 
 \subsubsection{Secondary track contamination}
-\input{./Sections/3Analysis_Strategy/Secondaries.tex} 
+\input{./Sections/3Analysis_Strategy/Secondaries.tex}
 
 \subsubsection{Beauty feed-down}
 \input{./Sections/3Analysis_Strategy/BeautyFeedDown.tex}
