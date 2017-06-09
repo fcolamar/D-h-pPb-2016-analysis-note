@@ -1,5 +1,5 @@
 mv compare0.3GeV.png comparedot3GeV.png
-mv Ratio0.3GeV.png RatiodotGeV.png
+mv Ratio0.3GeV.png Ratiodot3GeV.png
 mv compare1.0GeV.png compare1dotGeV.png
 mv Ratio1.0GeV.png Ratio1dotGeV.png
 mv compare2.0GeV.png compare2dotGeV.png
