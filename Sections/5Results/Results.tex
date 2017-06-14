@@ -1,6 +1,6 @@
 \label{results}
 \subsection{Comparing the three D meson correlation distributions}
-To check the compatibility of the three D meson analyses, Figure ~\ref{fig:DataD0DpDs} shows the corrected azimuthal correlation distributions (except for the feed-down subtraction and the secondary contamination removal) for $D^0$-h, $D^{*+}$-h and $D^+$-h, in each column, on the data sample used in the analysis. Results are shown for $3 < D\ p_\text{T} < 5$ GeV/$c$, $5 < D\ p_\text{T} < 8$ GeV/$c$, $8 < D \ p_\text{T} < 16$ GeV/$c$ and $16 < D\ p_\text{T} < 24$ GeV/$c$ with associated tracks $p_\text{T} > 0.3$, $p_\text{T} > 1$, $0.3 < p_\text{T} < 1$ GeV/$c$, $1 < p_\text{T} < 2$ GeV/$c$, $2 < p_\text{T} < 3$ GeV/$c$ and $ p_\text{T} > 3$ GeV/$c$.
+To check the compatibility of three D meson analyses, Figure ~\ref{fig:DataD0DpDs} shows the corrected azimuthal correlation distributions (except for the feed-down subtraction and the secondary contamination removal) for $\Dzero$-h, $\Dstar$-h and $\Dplus$-h, in each column, on the data sample used in the analysis. Results are shown for $3 < D\ p_\text{T} < 5$ GeV/$c$, $5 < D\ p_\text{T} < 8$ GeV/$c$, $8 < D \ p_\text{T} < 16$ GeV/$c$ and $16 < D\ p_\text{T} < 24$ GeV/$c$ with associated tracks $p_\text{T} > 0.3$, $p_\text{T} > 1$, $0.3 < p_\text{T} < 1$ GeV/$c$, $1 < p_\text{T} < 2$ GeV/$c$, $2 < p_\text{T} < 3$ GeV/$c$ and $ p_\text{T} > 3$ GeV/$c$.
 
 \begin{figure}[htbp]
 \centering
@@ -308,7 +308,7 @@ As expected, a rising trend of the height of the near-side peak with increasing 
 %Pt>3.0
 {\includegraphics[width=0.31\linewidth, height=0.23\linewidth]{figures/Averages/CanvaAndVariedHistoWeightedAverageDzeroDstarDplus_pPb_Pt8to16assocPt3dotto99dot.png}}
 \end{figure}
-\begin{figure}
+\begin{figure}[!htbp]
 \centering
 %Pt>0.3-1.0
 {\includegraphics[width=0.31\linewidth, height=0.23\linewidth]{figures/Averages/CanvaAndVariedHistoWeightedAverageDzeroDstarDplus_pPb_Pt8to16assocPtdot3to1dot.png}}
@@ -345,11 +345,11 @@ The usage of weighted average requires, as an underlying assumption, identical r
 %\label{fig:CfrAveragesAppr}
 %\end{figure}
 
-\subsection{Fit observable $p_{T}$ trends and uncertainties}
+\subsection{Fit observable $\pt$ trends and uncertainties}
 
 %The extraction of the parameters (i.e. near side associated yield, near side width, and baseline) is performed using the strategy described above. The pedestal is calculated as the weighted average of the 8 points (for the full 2$\pi$ range plots) lying in the so-called "transverse region", i.e. the interval $\frac{\pi}{4}<|\Delta\varphi|<\frac{\pi}{2}$.
 
-In order to extract quantitative and physical information from the data correlation patterns, the averaged D-h correlation distributions are fitted with two Gaussian functions (with means fixed at $\Delta\varphi$=0 and $\Delta\varphi$=$\pi$ values), plus a constant term (baseline). A periodicity condition is also applied to the fit function to obtain the same value at the bounds of 2$\pi$ range. The expression of the fit expression is reported below (equation \ref{eq:fitfunction}):
+In order to extract quantitative and physical information from the data correlation patterns, the averaged D-h correlation distributions are fitted with two Gaussian functions (with means fixed at $\Delta\varphi$=0 and $\Delta\varphi$=$\pi$ values), plus a constant term (baseline). A periodicity condition is also applied to the fit function to obtain the same value at the bounds of 2$\pi$ range. The expression of the fit function is reported below (equation \ref{eq:fitfunction}):
 
 %Added by Sandro
 \begin{equation}
@@ -372,7 +372,7 @@ An example of the results from the fit is shown in Figure~\ref{fig:ExFit}
  \label{fig:ExFit}
  \end{figure}
 
-From the fit outcome is it possible to retrieve the near-side and away-side yield and widths (integral and sigma of the Gaussian functions, respectively), as well as the baseline height. The near-side observables give information on the multiplicity and angular spread of the tracks from the fragmentation of the charm jet which gave birth to the D-meson trigger, while at first order the away-side observables are related to the hadronization of the charm parton produced in the opposite direction (though the presence of NLO processes for charm production breaks the full validity of this assumption). The baseline value is a rough indicator of the underlying event multiplicity, though below the baseline level also charm and beauty-related pairs are contained (especially in cases of NLO production for the heavy quarks).
+From the fit outcome, it is possible to retrieve the near-side and away-side yield and widths (integral and sigma of the Gaussian functions, respectively), as well as the baseline height of the correlation distribution. The near-side observables give information on the multiplicity and angular spread of the tracks from the fragmentation of the charm jet which gave birth to the D-meson trigger, while at first order the away-side observables are related to the hadronization of the charm parton produced in the opposite direction (though the presence of NLO processes for charm production breaks the full validity of this assumption). The baseline value is a rough indicator of the underlying event multiplicity, though below the baseline level also charm and beauty-related pairs are contained (especially in cases of NLO production for the heavy quarks).
 
 \begin{comment}
 Figures (\ref{fig:dzerofinaldphifitted}), ( \ref{fig:dstarfinaldphifitted}) and ( \ref{fig:averagefinaldphifitted}) show the fitted correlation distributions of the $\Dzero$, $\Dstar$ and the average; the systematic boxes include only the uncorrelated systematics.
@@ -413,8 +413,8 @@ Figures (\ref{fig:dzerofinaldphifitted}), ( \ref{fig:dstarfinaldphifitted}) and 
 The evaluation of the systematic uncertainties on the observables obtained from the fits is performed as follows:
 
 \begin{itemize}
-\item The fits are repeated by changing the range of the trasverse region in which the baseline is evaluated. Alternate definitions of $\frac{\pi}{4}<|\Delta\varphi|<\frac{3\pi}{8}$, $\frac{3\pi}{8}<|\Delta\varphi|<\frac{\pi}{2}$ and $\frac{\pi}{4}<|\Delta\varphi|<\frac{5\pi}{8}$ are considered.
-\item In addition, $\Delta\varphi$ correlation points are shifted to the upped and lower bounds of their uncorrelated systematic boxes, and the refitted.
+\item The fits are repeated by changing the range of the transverse region in which the baseline is evaluated. Alternate definitions of $\frac{\pi}{4}<|\Delta\varphi|<\frac{3\pi}{8}$, $\frac{3\pi}{8}<|\Delta\varphi|<\frac{\pi}{2}$ and $\frac{\pi}{4}<|\Delta\varphi|<\frac{5\pi}{8}$ are considered.
+\item In addition, $\Delta\varphi$ correlation points are shifted to the upper and lower bounds of their uncorrelated systematic boxes, and refitted.
 \item The maximum variation of the parameters between the fit outcomes defined in the previous points is considered as systematic uncertainty for the near-side and away-side widths.
 \item For the estimation of the baseline and of the near-side and away-side yields, the previous value is added in quadrature with the $\Delta\varphi$-correlated systematics in the correlation distributions, since these values are affected by a change in the global normalization of the distributions.
 \item In addition, for all the fit observables, another fit variation is performed assuming, instead of a flat baseline, a v$_2\Delta$-like modulation, with the following v$_2$ values for the associated tracks: 0.04 (0.3-1 GeV/c), 0.06 ($>$0.3 GeV/c), 0.08 (1-2 GeV/c), 0.09 ($>$1 GeV/c, 2-3 GeV/c), 0.1 ($>$3 GeV/c), on the basis of ATLAS preliminary results for heavy-flavour muons at 8 TeV; for the D-meson triggers the following v$_2$ values were instead assumed: 0.05 (3-5 GeV/c), 0.03 (5-8 GeV/c), 0.02 (8-24 GeV/c), on the basis of previous ALICE measurements in p-Pb collisions at 5 TeV \cite{ALICEv2ppb}. The difference of the fit observables with respect to the standard fits is taken as uncertainty. Due to its peculiarity, this systematic uncertainty is summed in quadrature with the others to obtain the total uncertainty, but is also shown separately in the figures.
@@ -868,7 +868,7 @@ Figure~\ref{fig:CfrDataMC_ParamFit} shows the comparison of the observables extr
 We are planning to approve the following results (the graphical way of showing the information has still to be defined):
 \begin{itemize}
 \item Average D-h correlation distributions, in the different kinematic ranges
-\item pT(D),pT(assoc) trend of NS yield, NS width, AS yield, AS sigma, baseline
+\item $p_\text{T}$(D), $p_\text{T}$(assoc) trend of NS yield, NS width, AS yield, AS sigma, baseline
 \item Comparison of correlation distributions with expectations from models (PYTHIA, POWHEG, EPOS)
 \item Comparison of fit observables with expectations from models (PYTHIA, POWHEG, EPOS)
 \item (probably) Comparison of correlation distributions and/or fit observables with pp 2010 (and/or pPb 2013) results
