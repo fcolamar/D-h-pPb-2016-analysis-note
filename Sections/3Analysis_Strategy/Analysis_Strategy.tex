@@ -1,5 +1,5 @@
-The analysis strategy follows the one used from 2013 p-Pb data sample. Correlation pairs are formed by
-trigger particles (D mesons) reconstructed and selected in the following $\pt^{\rm trig}$ ranges: $3<\pt^{\rm trig}<5$ $\gev/c$, $5<\pt^{\rm trig}<8$ $\gev/c$, $8<\pt^{\rm trig}<16$ $\gev/c$, $16<\pt^{\rm trig}<24$ $\gev/c$, and associated particles (charged tracks) for the following $\pt^{\rm assoc}$ regions: $\pt^{\rm assoc}>0.3$, $0.3<\pt^{\rm assoc}<1$, $1<\pt^{\rm assoc}<2$, $2<\pt^{\rm assoc}<3$, $\pt^{\rm assoc}>3$ $\gev/c$ (with the addition of $\pt^{\rm assoc}>1$ $\gev/c$ for comparison with p-Pb 2013 results). In D meson correlations, the particle identification
+The analysis follows the same strategy one used in 2013 p-Pb data sample. Correlation pairs are formed by
+trigger particles (D mesons) reconstructed and selected in the following $\pt^{\rm trig}$ ranges: $3<\pt^{\rm trig}<5$ $\gev/c$, $5<\pt^{\rm trig}<8$ $\gev/c$, $8<\pt^{\rm trig}<16$ $\gev/c$, $16<\pt^{\rm trig}<24$ $\gev/c$, and associated particles (charged tracks) for the following $\pt^{\rm assoc}$ regions: $\pt^{\rm assoc}>0.3$ $\gev/c$, $0.3<\pt^{\rm assoc}<1$ $\gev/c$, $1<\pt^{\rm assoc}<2$ $\gev/c$, $2<\pt^{\rm assoc}<3$ $\gev/c$, $\pt^{\rm assoc}>3$ $\gev/c$ (with the addition of $\pt^{\rm assoc}>1$ $\gev/c$ for comparison with p-Pb 2013 results). In this analysis, the particle identification
 defines the trigger particle rather than a momentum cut and therefore the momentum range of the associated particles is not constrained by that of the trigger particle. Our definition of associated particle includes any charged particle coming from the primary vertex of interaction, including
 those coming from strong and electromagnetic decay of unstable particles, and particles deriving from the
 decay of hadrons with charm or beauty.
@@ -14,7 +14,7 @@ The analysis is performed through the following steps:
 \underline {\bf D meson selection and signal extraction.}  For each single event, ``trigger" particles
 are defined as the selected  D meson candidates ($\Dzero$, $\Dplus$ and $\Dstar$)
 within a given $\pt^{\rm trig}$ range. The detection strategy for D mesons at central rapidity is
-the same performed for the analyses of the D-meson production at central rapidity~\cite{ALICEDmespp7Tev}, and also applied for the D-h analysis on 2010 pp and 2013 p-Pb samples~\cite{ALICEDhcorr} and is based on the reconstruction of decay
+the same performed for the analyses of the D-meson production at central rapidity~\cite{ALICEDmespp7Tev}, and also applied for the D-h analysis on 2010 pp and 2013 p-Pb samples~\cite{ALICEDhcorr}. It is based on the reconstruction of decay
 vertices displayed from the primary vertex by a few hundred $\mu$m and on the identification of the decay-particle species.
 The identification of the charged kaon and pion in the TPC and TOF
 detectors helps to further reduce the background at low $\pt$.  An
@@ -24,10 +24,10 @@ The D mesons are selected in the rapidity range varying from $|y|<0.5$ at low $\
 
 \item
 \underline{\bf Correlation of D candidates with associated tracks.}
-Particle pairs are formed by associating each trigger particle with
+Particle pairs are formed by correlating each trigger particle with
 the charged primary particles passing the track selection (excluding those coming from the decay of the D-meson candidate) in a specified $p^{assoc}_{T}$
 interval (which can overlap with the $\pt^{\rm trig}$ range) and in the pseudo-rapidity range $|\eta|<0.8$. For the $\Dzero$ meson, also the low-momentum pion tracks from feed-down of $\Dstar$ mesons are removed via 3$\sigma$ invariant mass cut on the $M(K\pi\pi)-M(K\pi)$ difference. This because these soft pion are not related to the charm quark fragmentation chain.
-For D meson candidates in the invariant mass signal region, defined by a $\pm$ 2$\sigma$ interval around the D meson mass, the azimuthal angle difference $\varphi^{\rm assoc}-\varphi^{\rm trigg}\equiv\Delta\varphi$
+For D meson candidates in the invariant mass signal region, defined by a $\pm$ 2$\sigma$ interval around the D meson mass peak, the azimuthal angle difference $\varphi^{\rm assoc}-\varphi^{\rm trigg}\equiv\Delta\varphi$
 and the pseudorapidity difference $\eta^{\rm assoc}-\eta^{\rm trig}\equiv\Delta \eta$ are evaluated and stored to build two-dimensional correlation distribution. % in a multi-dimensional histogram.
 
 \item
@@ -47,16 +47,16 @@ The differential yield of associated particles per trigger particle is obtained 
 where $N^\text{pair}$ is the total number of correlated D-hadron
 pairs. The functions $S(\Delta\eta,\Delta\varphi)$ and
 $B_{ME}(\Delta\eta,\Delta\varphi)$ are the signal and the mixed event
-background distributions, respectively. The latter is normalized to its value in
+background distributions, respectively. The later is normalized to its value in
 $(\Delta\eta,\Delta\varphi)=(0,0)$, i.e. ($B(0,0)$).
-Further details on the mixed-event correction are provided further on.
+Further details on the mixed-event correction are provided in the next section.
 
 \item
 \underline{\bf Subtraction of background correlation from signal distribution.}
-The invariant mass signal region includes also background D-meson candidates. Their contribution to the
+The invariant mass signal region also includes background D-meson candidates. Their contribution to the
 raw correlation distribution is subtracted as follows. For each $\pt$ bin, the mean and the sigma of the
 invariant mass spectrum are extracted. For $\Dzero$ and $\Dplus$, a ``background'' region is defined in the sidebands of the mass
-distribution as the interval $4 \gev/c^2<|m-m^{\rm pdg}|<8 \gev/c^2$ (for the $\Dstar$ meson, only the right sideband is used). The angular correlation distribution
+distribution as the interval $4 ~ \gev/c^2<|m-m^{\rm pdg}|<8 ~ \gev/c^2$ (for the $\Dstar$ meson, only the right sideband is used). The angular correlation distribution
 for background candidates in this region is extracted and normalized with respect to the background in the signal region
 estimated from the mass fit. This normalized background correlation distribution is then subtracted from the
 raw signal one to obtain the signal correlation distribution. The normalization factor is the ratio of the number of background candidates under the signal peak (obtained by integrating the background of the fit function within the signal region) over the number of background candidates in the sidebands (obtained via bin-counting in the sideband region). This normalized background correlation distribution is then subtracted from the
@@ -74,7 +74,7 @@ background-subtracted per-trigger normalized correlation distribution (black).}
 
 \item
 \underline{\bf Correction for D meson efficiency and associated track efficiency.}
-After filling the signal and background correlation distributions, it is necessary to take into account also for the correlations with tracks not reconstructed, or not passing the quality selection due to poor reconstruction. In the same way, the loss of D-mesons which are not reconstructed, or do not pass the selection, impacts the correlation distribution shape. Hence, each pair is weighted by the
+After filling the signal and background correlation distributions, it is necessary to take into account also for the correlations with tracks, those are not reconstructed, or not passing the quality selection due to poor reconstruction. In the same way, the loss of D-mesons which are not reconstructed, or do not pass the selection, impacts the correlation distribution shape. Hence, each pair is weighted by the
 inverse of the product of the associated track and D meson reconstruction efficiency, $\epsilon_{trk}$ and $\epsilon_{trig}$. Further details are provided later on in this section.
 
 \item
@@ -82,14 +82,14 @@ inverse of the product of the associated track and D meson reconstruction effici
 The limited statistics available does not allow to study the two dimensional
 $(\Delta\eta,\Delta\varphi)$ distribution, which is therefore projected to the $\Delta\varphi$ axis by integrating on $|\Delta\eta| <$ 1. Despite, in principle, our maximum $\Delta\eta$ acceptance is of $|\Delta\eta| <$ 1.6, removing the large $|\Delta\eta|$ regions allow us to reject angular regions with very low statistics, where fluctuations would be amplified by a large mixed-event correction, and avoid the so-called wings effect.
 
-As the difference in the azimuthal angle is periodic ($\Delta \varphi = 0 = 2\pi$), the $\Delta\varphi$-range is limited to the essential range of 2$\pi$. The $\Delta \varphi$-limits are chosen to be [$-\pi$/2,3$\pi$/2] in order to provide a good visibility of the correlation pattern, which peaks around 0 and $\pi$.
+As the difference in the azimuthal angle is periodic ($\Delta \varphi = 0 = 2\pi$), the $\Delta\varphi$-range is limited to the essential range of 2$\pi$. The $\Delta \varphi$-limits are chosen to be [$-\pi$/2, 3$\pi$/2] in order to provide a good visibility of the correlation pattern, which peaks around 0 and $\pi$.
 
 \item
 \underline{\bf Correction for the contamination of secondary particles}
 The DCA to primary vertex cut, applied during the associated track selection, has the role of removing the secondary particles from the associated track sample.
 Secondary particles are indeed produced either from long-lived strange hadrons or from interaction of particles with the detector material. A residual contamination from secondary tracks is hence expected in the correlation distributions. This contamination is estimated from Monte Carlo simulation
 based on Pythia as described more in detail in the next section. The background-subtracted
-event-mixing corrected correlations are multiplied by a purity factor to remove this contribution.
+event-mixing corrected correlations are multiplied by a purity factor to encounter this contribution.
 
 \item
 \underline{\bf Correction for bias on B to D decay topologies}
@@ -125,7 +125,7 @@ The fitting procedure is described in details in Section \ref{results}.
 \end{enumerate}
 
 \subsection{Mass plots and cut optimization}
-The invariant mass distributions in the various $\pt$ ranges studies are shown in Figure~\ref{fig:InvMassD0},~\ref{fig:InvMassDs} and~\ref{fig:InvMassDp} for $\Dzero$, $\Dstar$ and $\Dplus$ respectively.
+The invariant mass distributions of $\Dzero$, $\Dstar$ and $\Dplus$ in the various pt ranges are shown in Figure~\ref{fig:InvMassD0},~\ref{fig:InvMassDs} and~\ref{fig:InvMassDp} respectively.
 
 \begin{figure}[!htp]
 \centering
@@ -136,7 +136,7 @@ The invariant mass distributions in the various $\pt$ ranges studies are shown i
 {\includegraphics[width=0.6\linewidth, height=5.6cm]{figures/Dzero/InvMassDistributions_Dzero_Bins12to12.png}}
 
 %[width=.32\linewidth]
-\caption{Invariant mass distributions of $D^0$ in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ GeV/c (left), $4< p_{T}^{\text{D}}< 5$ GeV/c right), Mid 1: $5< p_{T}^{\text{D}}< 6$ GeV/c (left), $6 < p_{T}^{\text{D}} < 7$ GeV/c (middle), $7< p_{T}^{\text{D}}< 8$ GeV/c (right); Mid2: $8< p_{T}^{\text{D}}< 10$ GeV/c, $10< p_{T}^{\text{D}}< 12$ GeV/c  (middle), $12 < p_{T}^{\text{D}}< 16$ GeV/c  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ GeV/c.}
+\caption{Invariant mass distributions of $D^0$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Mid 1: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right); Mid2: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$.}
 \label{fig:InvMassD0}
 \end{figure}
 
@@ -147,7 +147,7 @@ The invariant mass distributions in the various $\pt$ ranges studies are shown i
 {\includegraphics[width=1\linewidth, height=5.6cm]{figures/Dstar_wEFF/InvMassDistributions_Dstar_Bins7to9.png}}
 {\includegraphics[width=0.6\linewidth, height=5.6cm]{figures/Dstar_wEFF/InvMassDistributions_Dstar_Bins10to10.png}}
 
-\caption{Invariant mass distributions of $\Dstar$ in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ GeV/c (left), $4< p_{T}^{\text{D}}< 5$ GeV/c right), Mid 1: $5< p_{T}^{\text{D}}< 6$ GeV/c (left), $6 < p_{T}^{\text{D}} < 7$ GeV/c (middle), $7< p_{T}^{\text{D}}< 8$ GeV/c (right); Mid2: $8< p_{T}^{\text{D}}< 10$ GeV/c, $10< p_{T}^{\text{D}}< 12$ GeV/c  (middle), $12 < p_{T}^{\text{D}}< 16$ GeV/c  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ GeV/c .}
+\caption{Invariant mass distributions of $\Dstar$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Mid 1: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right); Mid2: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$ .}
 \label{fig:InvMassDs}
 \end{figure}
 
@@ -158,7 +158,7 @@ The invariant mass distributions in the various $\pt$ ranges studies are shown i
 {\includegraphics[width=1\linewidth, height=5.6cm]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins8to10.png}}
 {\includegraphics[width=0.6\linewidth, height=5.6cm]{figures/DplusPlotsweff/InvMassDistributions_Dplus_Bins11to11.png}}
 
-\caption{Invariant mass distribution of $\Dplus$ in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ GeV/c (left), $4< p_{T}^{\text{D}}< 5$ GeV/c right), Mid 1: $5< p_{T}^{\text{D}}< 6$ GeV/c (left), $6 < p_{T}^{\text{D}} < 7$ GeV/c (middle), $7< p_{T}^{\text{D}}< 8$ GeV/c (right); Mid2: $8< p_{T}^{\text{D}}< 10$ GeV/c, $10< p_{T}^{\text{D}}< 12$ GeV/c  (middle), $12 < p_{T}^{\text{D}}< 16$ GeV/c  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ GeV/c .}
+\caption{Invariant mass distribution of $\Dplus$ corrected with efficiency in different $\text{p}_T$ regions. Top: $3< p_{T}^{\text{D}}< 4$ $\gev/c$ (left), $4< p_{T}^{\text{D}}< 5$ $\gev/c$ right), Mid 1: $5< p_{T}^{\text{D}}< 6$ $\gev/c$ (left), $6 < p_{T}^{\text{D}} < 7$ $\gev/c$ (middle), $7< p_{T}^{\text{D}}< 8$ $\gev/c$ (right); Mid2: $8< p_{T}^{\text{D}}< 10$ $\gev/c$, $10< p_{T}^{\text{D}}< 12$ $\gev/c$  (middle), $12 < p_{T}^{\text{D}}< 16$ $\gev/c$  (right) and Bottom: $16<p_{T}^{\text{D}}< 24$ $\gev/c$ .}
 \label{fig:InvMassDp}
 \end{figure}
 
@@ -175,7 +175,7 @@ In Figure \ref{fig:cutoptD0} the $\Dzero$-h correlation distributions are shown 
 {\includegraphics[width=0.47\linewidth, height=5.6cm]{figures/Cut_Optimiz_D0/AzimCorrDistr_Dzero_Canvas_PtIntBins9to10_PoolInt_thr03to99_Superimp.png}}
 {\includegraphics[width=0.47\linewidth, height=5.6cm]{figures/Cut_Optimiz_D0/Uncertanty_AzimCorrDistr_Dzero_Canvas_PtIntBins9to10_PoolInt_thr03to99.png}}
 
-\caption{$\Dzero$-h correlation distributions with different cut options (left) and point-by-point relative statistical uncertainty (right) for $3< p_{T}^{\text{D}}< 5$ GeV/c (top), $5< p_{T}^{\text{D}}< 8$ GeV/c (middle), $8< p_{T}^{\text{D}}< 16$ GeV/c (bottom), in all cases with associated track $\pt$ $> 0.3$ GeV/c.}
+\caption{$\Dzero$-h correlation distributions with different cut options (left) and point-by-point relative statistical uncertainty (right) for $3< p_{T}^{\text{D}}< 5$ $\gev/c$ (top), $5< p_{T}^{\text{D}}< 8$ $\gev/c$ (middle), $8< p_{T}^{\text{D}}< 16$ $\gev/c$ (bottom), in all cases with associated track $\pt$ $> 0.3$ $\gev/c$.}
 \label{fig:cutoptD0}
 \end{figure}
 
@@ -192,7 +192,7 @@ AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and AliAnalysi
 \begin{figure}[!ht]
 \centering
 %{\includegraphics[width=.95\linewidth]{figures/Dplus_low_dot5_SEbyME.png}}
- \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for low $p_{T}$: $3 < p_{T}^{\text{D}^+} < 5 GeV/c$ with associated track $p_{T}$ threshold 0.3 GeV/c }
+ \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for low $p_{T}$: $3 < p_{T}^{\text{D}^+} < 5 $\gev/c$$ with associated track $p_{T}$ threshold 0.3 $\gev/c$ }
 \label{fig:DplusSEbyMEPlots1}
 \end{figure}
 
@@ -202,14 +202,14 @@ AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and AliAnalysi
 \centering
 %Marianna
 %{\includegraphics[width=.95\linewidth]{figures/Dplus_mid_dot5_SEbyME.png}}
- \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for mid $p_{T}$: $5< p_{T}^{\text{D}^+}< 8 GeV/c$ with associated track $p_{T}$ threshold 0.3 GeV/c }
+ \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for mid $p_{T}$: $5< p_{T}^{\text{D}^+}< 8 $\gev/c$$ with associated track $p_{T}$ threshold 0.3 $\gev/c$ }
 \label{fig:DplusSEbyMEPlots2}
 \end{figure}
 
 \begin{figure}[!ht]
 \centering
 %{\includegraphics[width=.95\linewidth]{figures/Dplus_high_dot5_SEbyME.png}}
- \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for high $p_{T}$: $8< p_{T}^{\text{D}^+}< 16 GeV/c$ with associcated track $p_{T}$ threshold 0.3 GeV/c }
+ \caption{($\Delta \varphi , \Delta \eta$) correlation in the Sidebands and Signal region from Single Event and Mixing Event analysis for high $p_{T}$: $8< p_{T}^{\text{D}^+}< 16 $\gev/c$$ with associcated track $p_{T}$ threshold 0.3 $\gev/c$ }
 \label{fig:DplusSEbyMEPlots3}
 \end{figure}
 
