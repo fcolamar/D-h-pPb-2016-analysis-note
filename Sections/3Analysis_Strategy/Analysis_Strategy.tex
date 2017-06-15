@@ -92,7 +92,7 @@ event-mixing corrected correlations are multiplied by a purity factor to encount
 
 \item
 \underline{\bf Correction for bias on B to D decay topologies}
-The presence of the topological cuts for the D-meson selection indirecly induce a bias on the topology of the B to D recay topologies, favouring cases with a small opening angle between the D-meson and the other tracks from the B decay. This affects the feed-down component of the data correlation distributions. This effect is corrected for with a procedure described in the subsection \ref{MCclosure}
+The presence of the topological cuts for the D-meson selection indirecly induce a bias on the topology of the B to D recay topologies, favouring cases with a small opening angle between the D-meson and the other tracks from the B decay. This affects the feed-down component of the data correlation distributions. This effect is corrected for with a procedure described in the subsection \ref{MCclosure}. Note that this correction is a novelty with respect to the previous analyses, where only a quite conservative systematic uncertainty was applied to take into account this effect.
 
 \item
 \underline{\bf Correction for feed-down of D meson from b-hadron decay}
@@ -182,6 +182,8 @@ In Figure \ref{fig:cutoptD0} the $\Dzero$-h correlation distributions are shown 
 The code used for D meson-hadron correlation analysis is fully committed in AliPhysics. The analysis classes can be found in
 \$ALICE\_ROOT/PWGHF/correlationHF/.  The  D meson specific classes where the aforementioned steps are carried out are
 AliAnalysisTaskDStarCorrelations, AliAnalysisTaskSED0Correlations and AliAnalysisTaskDplusCorrelations. The classes which are common to the D meson specific analysis which includes the associated particle cuts and the correlation observables are AliHFAssociatedTrackCuts, AliHFCorrelator, AliHFOfflineCorrelator, AliReducedParticle and AliDhCorrelationExtraction. Several additional classes and macros in the same folder deal with the correction steps.
+
+The final results presented here are extracted are the HFCJ pPb (n. 88) train runs 254-257 (for $\Dzero$ and $\Dplus$) and 268-271 (for $\Dstar$).
 
 \subsection{Further details on corrections}
 \subsubsection{Event Mixing}
