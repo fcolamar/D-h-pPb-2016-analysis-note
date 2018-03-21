@@ -199,86 +199,63 @@ As an example, the ratio of $\pt$-projection of the tracking efficiency maps whe
 
 {\bf (ii) Trigger efficiency}
 
-Differently from the track efficiency, the D-meson reconstruction and selection efficiency can have a dependence on the event multiplicity that has to be taken into account. This mainly depends on the lower efficiency on the reconstruction of the primary vertex (included in the overall D-meson reconstruction efficiency) for very low multiplicity events. Indeed, as it can be seen in Fig. {\bf REF}, the efficiency is rather flat above 20-30 tracklets, and starts to drop below that SPD tracklet multiplicity.
+Differently from the track efficiency, the D-meson reconstruction and selection efficiency can have a dependence on the event multiplicity that has to be taken into account. This mainly depends on the lower efficiency on the reconstruction of the primary vertex (included in the overall D-meson reconstruction efficiency) for very low multiplicity events. Indeed, as it can be seen in Fig. \ref{fig:dEffvsMult}, the efficiency is rather flat above 20-30 tracklets, and starts to drop below that SPD tracklet multiplicity.
 
-
-
-
-\begin{figure}[!htp]   
+\begin{figure}[!htp]
 	\centering
 %Marianna
-    \includegraphics[width=.48\linewidth]{figuresVsCent/Global/EfficiencyMap_1D_DStar_c_020_ZNA_vsMult_wLimAcc_Plot.png
-}
-\includegraphics[width=.48\linewidth]{figuresVsCent/Global/EfficiencyMap_1D_DStar_b_020_ZNA_vsMult_wLimAcc_Plot.png
-}
-\caption{Multiplicity dependence of prompt (top) and non-prompt (bottom) $\Dstar$ meson efficiency in 0-20$\%$ centrality class.
-
-}
+    \includegraphics[width=.48\linewidth]{figuresVsCent/Global/EfficiencyMap_1D_DStar_c_020_ZNA_vsMult_wLimAcc_Plot.png}
+\includegraphics[width=.48\linewidth]{figuresVsCent/Global/EfficiencyMap_1D_DStar_b_020_ZNA_vsMult_wLimAcc_Plot.png}
+\caption{Multiplicity dependence of prompt (top) and non-prompt (bottom) $\Dstar$ meson efficiency in 0-20$\%$ centrality class.}
 	\label{fig:dEffvsMult}	
 \end{figure}
 
 To consider this dependence, separate trigger efficiency maps were built for each centrality slice, by running the trigger efficiency task on the reweighted Monte Carlo enriched sample (using the same event weights described above).
-In Fig. {\bf REF} the trigger efficiency maps, and their projection onto the $\pt$ axis, are shown for the three D mesons in each centrality class considered.
+In Figs. \ref{fig:dzeroEff}, \ref{fig:dplusEff}, \ref{fig:dstarEff} the trigger efficiency maps, and their projection onto the $\pt$ axis, are shown for the three D mesons in each centrality class considered.
 
-
-\begin{figure}[h]   %Dstar 
+\begin{figure}[h]   %Dstar
 	\centering
 	%Marianna
 	
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_2D_DStar_c_020_ZNA_wLimAcc_Plot.png
-}
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_1D_DStar_c_020_ZNA_wLimAcc_Plot.png
-}
-
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_2D_DStar_c_2060_ZNA_wLimAcc_Plot.png
-}
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_1D_DStar_c_2060_ZNA_wLimAcc_Plot.png
-}
-
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_2D_DStar_c_60100_ZNA_wLimAcc_Plot.png
-}
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_1D_DStar_c_60100_ZNA_wLimAcc_Plot.png
-}
-	\caption{Top panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (right) of prompt $\Dstar$ meson efficiency in 0-20$\%$.
-Mid panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (right) of prompt $\Dstar$ meson efficiency in 20-60$\%$.
+	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_2D_DStar_c_020_ZNA_wLimAcc_Plot.png}
+	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_1D_DStar_c_020_ZNA_wLimAcc_Plot.png}
+	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_2D_DStar_c_2060_ZNA_wLimAcc_Plot.png}
+	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_1D_DStar_c_2060_ZNA_wLimAcc_Plot.png}
+	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_2D_DStar_c_60100_ZNA_wLimAcc_Plot.png}
+	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_1D_DStar_c_60100_ZNA_wLimAcc_Plot.png}
+	\caption{Top panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (right) of prompt $\Dstar$ meson efficiency in 0-20$\%$. Mid panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (right) of prompt $\Dstar$ meson efficiency in 20-60$\%$.
 Bottom panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (right) of prompt $\Dstar$ meson efficiency in 60-100$\%$.}
 	\label{fig:dstarEff}	
 \end{figure}
 
-\begin{figure}[h]   %Dzero 
+\begin{figure}[h]   %Dzero
 	\centering
 	%Marianna
-	
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_2D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png}
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_1D_DStar_c_020_ZNA_wLimAcc_Plot.png
-}
-
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_2D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png
-}
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_1D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png
-}
-
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_2D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png
-}
-	\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_1D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png
-}
+\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_2D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png}
+	\includegraphics[width=.48\linewidth]{figuresVsCent/Dstar/EffAndFeed/EfficiencyMap_1D_DStar_c_020_ZNA_wLimAcc_Plot.png}
+\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_2D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png}
+\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_1D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png}
+\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_2D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png}
+\includegraphics[width=.48\linewidth]{figuresVsCent/Dzero/EffAndFeed/EfficiencyMap_1D_Dzero_c_RefPtBins_Cuts020_MultWeig_wLimAcc_Plot.png}
 	\caption{Top panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (right) of prompt $\Dzero$ meson efficiency in 0-20$\%$.
 Mid panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (right) of prompt $\Dzero$ meson efficiency in 20-60$\%$.
 Bottom panel: ($\pt$, multiplicity) dependence (left) and $\pt$ dependence (right) of prompt $\Dzero$ meson efficiency in 60-100$\%$.}
 	\label{fig:dzeroEff}	
 \end{figure}
 
-
-
+\begin{figure}[h]   %Dzero
+	\centering
+	\includegraphics[width=.9\linewidth]{Centrality_DPlus/Dplus/Eff_cmp/eff_c_d_cmpwithjune17.png}
+	\caption{$\Dplus$ reco and selection efficiency for the various centrality classes (1D projection).}
+	\label{fig:dplusEff}	
+\end{figure}
 
 Then, the trigger efficiency correction follows the same procedure, based on an online-weighting of the correlation pairs, described in subsection 3.3.2 (ii).
 
 \subsubsection{Correction for bias on B to D decay topologies}
 As described in detail in subsection 3.3.3, performing a Monte Carlo closure test allows to spot a bias on the correlation distributions, due to the presence of structures in the near-side region for B$\rightarrow$D-h correlations, induced by the topological selection on the D.
 After the projection of the correlation distributions on $\Delta\varphi$, a correction has thus to be applied on the azimuthal correlation distributions. The procedure for the evaluation of the correction to apply on data is repeated for each centrality class.
-The outcome of the MC closure test, i.e. the Reco/Kine ratios, is shown for each centrality class in Fig. {\bf REF} (using the $\Dzero$ meson as trigger).
-
-
+The outcome of the MC closure test, i.e. Kine and Reco distributions and the Reco/Kine ratios, is shown for each centrality class in Fig. \ref{fig:MC_Kine_020}, \ref{fig:MC_Reco_020}, \label{fig:MC_Ratio_60100} (using the $\Dzero$ meson as trigger).
 
 \begin{figure}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins4to5_PoolInt_thr03to1.png}
@@ -288,21 +265,15 @@ The outcome of the MC closure test, i.e. the Reco/Kine ratios, is shown for each
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins6to8_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins6to8_PoolInt_thr1to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to1.png}
-v{\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to99.png}
+{\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr03to1.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/020/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr1to99.png}
-
-
-
-
-}
 \caption{$\Dzero$-hadrons azimuthal correlation distribution obtained from Monte Carlo, at kinematic step in 0-20$\%$ centrality class. Black points: All $\Dzero$-all hadrons, normalized by all $\Dzero$ triggers; light red points: $\Dzero$ from c-hadrons from c, normalized by c-$\Dzero$ triggers; dark red points: $\Dzero$ from c-all hadrons, normalized by c-$\Dzero$ triggers; light green points: $\Dzero$ from b-hadrons from b, normalized by b-$\Dzero$ triggers; dark green points: $\Dzero$ from b-all hadrons, normalized by b-$\Dzero$ triggers; blue points: All $\Dzero$-hadrons from light quarks, normalized by all $\Dzero$ triggers.
 The panels show the ranges: $3 < \pt$(D)$ < 5$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (top-left); $3 < \pt$(D)$ < 5$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (top-right); $8 < \pt$(D)$ < 16$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (bottom-left); $8 < \pt$(D)$ < 16$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (bottom-right).}
 \label{fig:MC_Kine_020}
 \end{figure}
-
 
 \begin{figure}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins4to5_PoolInt_thr03to1.png}
@@ -312,19 +283,14 @@ The panels show the ranges: $3 < \pt$(D)$ < 5$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins6to8_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins6to8_PoolInt_thr1to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to1.png}
-v{\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to99.png}
+{\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr03to1.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/2060/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr1to99.png}
-
-
-
-
-}
 \caption{$\Dzero$-hadrons azimuthal correlation distribution obtained from Monte Carlo, at kinematic step in 20-60$\%$ centrality class. Black points: All $\Dzero$-all hadrons, normalized by all $\Dzero$ triggers; light red points: $\Dzero$ from c-hadrons from c, normalized by c-$\Dzero$ triggers; dark red points: $\Dzero$ from c-all hadrons, normalized by c-$\Dzero$ triggers; light green points: $\Dzero$ from b-hadrons from b, normalized by b-$\Dzero$ triggers; dark green points: $\Dzero$ from b-all hadrons, normalized by b-$\Dzero$ triggers; blue points: All $\Dzero$-hadrons from light quarks, normalized by all $\Dzero$ triggers.
 The panels show the ranges: $3 < \pt$(D)$ < 5$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (top-left); $3 < \pt$(D)$ < 5$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (top-right); $8 < \pt$(D)$ < 16$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (bottom-left); $8 < \pt$(D)$ < 16$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (bottom-right).}
-\label{fig:MC_Kine_2060}
+\label{fig:MC_Reco_2060}
 \end{figure}
 
 \begin{figure}
@@ -335,19 +301,14 @@ The panels show the ranges: $3 < \pt$(D)$ < 5$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins6to8_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins6to8_PoolInt_thr1to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to1.png}
-v{\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to99.png}
+{\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins9to11_PoolInt_thr1to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr03to1.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr03to99.png}
 {\includegraphics[width=.48\linewidth]{figuresVsCent/Global/MCClosure/60100/MCClosure_Dzero_Canvas_PtIntBins12to12_PoolInt_thr1to99.png}
-
-
-
-
-}
 \caption{$\Dzero$-hadrons azimuthal correlation distribution obtained from Monte Carlo, at kinematic step in 60-100$\%$ centrality class. Black points: All $\Dzero$-all hadrons, normalized by all $\Dzero$ triggers; light red points: $\Dzero$ from c-hadrons from c, normalized by c-$\Dzero$ triggers; dark red points: $\Dzero$ from c-all hadrons, normalized by c-$\Dzero$ triggers; light green points: $\Dzero$ from b-hadrons from b, normalized by b-$\Dzero$ triggers; dark green points: $\Dzero$ from b-all hadrons, normalized by b-$\Dzero$ triggers; blue points: All $\Dzero$-hadrons from light quarks, normalized by all $\Dzero$ triggers.
 The panels show the ranges: $3 < \pt$(D)$ < 5$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (top-left); $3 < \pt$(D)$ < 5$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (top-right); $8 < \pt$(D)$ < 16$ $\gev/c$ , $0.3 < \pt$(assoc)$ < 1$ $\gev/c$  (bottom-left); $8 < \pt$(D)$ < 16$ $\gev/c$ , $\pt$(assoc)$ > 1$ $\gev/c$  (bottom-right).}
-\label{fig:MC_Kine_60100}
+\label{fig:MC_Ratio_60100}
 \end{figure}
 
 As (slightly) visible from the plots, the B$\rightarrow$D structures are larger in 0-20\% rather than in 60-100\% if only the associated tracks coming from beauty are considered (light-green point). Anyway, the situation is reversed when considering all the associated tracks, i.e. also the uncorrelated pairs (dark-green points) - which is the case to be considered to evaluate the correction. This is understandable, due to the lower presence of uncorrelated pairs in 60-100\%, which enhances the peak/baseline ratio w.r.t. 0-20\%. This also reflects in a (slightly) larger correction for 60-100\% centrality class rather than for 20-60\% and 0-20\%.
@@ -393,8 +354,37 @@ The results of the check is shown in Fig. \ref{fig:PurityAppr}, for $3<\pt^{\rm 
 
 The correction was independently evaluated on each centrality class (by applying the event weights to the Monte Carlo).
 No significant deviations of the purity were found among the different centralities.
-As an example, Fig. {\bf REF} shows the average purity contribution (linear fit over the distributions of slide), for the various kinematic regions, for each centrality class. The same conclusion holds also for the differential correction, effectively applied on data.
+As an example, Figs. \label{fig:PurityFlat020}, \label{fig:PurityFlat2060}, \label{fig:PurityFlat60100} show the average purity contribution (linear fit over the distributions of slide), for the various kinematic regions, for each centrality class (one per figure). The same conclusion about the compatibility among the various classes holds also for the differential correction, effectively applied on data.
 
+\begin{figure}
+\centering
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_0_20_DCA100/FractOfSecOverTotal_3to5.png}}
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_0_20_DCA100/FractOfSecOverTotal_5to8.png}} //
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_0_20_DCA100/FractOfSecOverTotal_8to16.png}}
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_0_20_DCA100/FractOfSecOverTotal_16to24.png}}
+ \caption{Overall value of purity (averaged over $\Delta\varphi$) for the various associated track $\pt$ ranges, in 0-20\%. $\Dzero$ meson is taken as trigger particle. Each panel represent a D-meson $\pt$ bin.}
+\label{fig:PurityFlat020}
+\end{figure}
+
+\begin{figure}
+\centering
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_20_60_DCA100/FractOfSecOverTotal_3to5.png}}
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_20_60_DCA100/FractOfSecOverTotal_5to8.png}} //
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_20_60_DCA100/FractOfSecOverTotal_8to16.png}}
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_20_60_DCA100/FractOfSecOverTotal_16to24.png}}
+ \caption{Overall value of purity (averaged over $\Delta\varphi$) for the various associated track $\pt$ ranges, in 20-60\%. $\Dzero$ meson is taken as trigger particle. Each panel represent a D-meson $\pt$ bin.}
+\label{fig:PurityFlat2060}
+\end{figure}
+
+\begin{figure}
+\centering
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_60_100_DCA100/FractOfSecOverTotal_3to5.png}}
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_60_100_DCA100/FractOfSecOverTotal_5to8.png}} //
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_60_100_DCA100/FractOfSecOverTotal_8to16.png}}
+{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/Purity/Output_Plots_60_100_DCA100/FractOfSecOverTotal_16to24.png}}
+ \caption{Overall value of purity (averaged over $\Delta\varphi$) for the various associated track $\pt$ ranges, in 60-100\%. $\Dzero$ meson is taken as trigger particle. Each panel represent a D-meson $\pt$ bin.}
+\label{fig:PurityFlat60100}
+\end{figure}
 
 \subsubsection{Feed-down correction}
 The technique for performing the feed-down correction is based on the subtraction of templates of correlation distributions of feed-down D- and charged particle correlations obtained from Monte Carlo simulations - after their rescaling by means of the fraction of prompt D meson in the reconstructed D-meson sample, f$\_{\rm prompt}$.
@@ -406,7 +396,7 @@ The only modification consists in a possible dependence of the feed-down correct
   \item Dependence of the B$\rightarrow$D-hadron correlation peaks on the event centrality. This would require modifying the MC templates for B$\rightarrow$D-hadron correlations used for each centrality class. This effect was neglected, since no evidences exist, at the moment, on a possible modification of the heavy-flavour quark fragmentation versus the event multiplicity.
 \end{itemize}
 To consider the above effects, an independent evaluation of f$_{\rm prompt}$ was performed in each centrality class, using the specific trigger efficiency maps and possible ranges of $R_{\rm pPb}$(B)/$R_{\rm pPb}$(D) (entering in the f$\_{\rm prompt}$ uncertainty), from 0.9-1.1 in 60-100\% to 0.9-1.3 in 0-20\%.
-The resulting f$\_{\rm prompt}$ values are shown, for the three D mesons, in Fig. {\bf REF}.
+The resulting f$\_{\rm prompt}$ values are shown, for the three D mesons, in Figs. \ref{fpromptDzero}, \ref{fpromptDstar}, \ref{fpromptDplus}.
 
 
 \begin{figure}
@@ -428,8 +418,6 @@ The resulting f$\_{\rm prompt}$ values are shown, for the three D mesons, in Fig
 \includegraphics[width=0.6\linewidth]{figuresVsCent/Dstar/EffAndFeed/fPrompt_2060.png}
 
 \includegraphics[width=0.6\linewidth]{figuresVsCent/Dstar/EffAndFeed/fPrompt_60100.png}
-
-
 \caption{$f_{\rm prompt}$ as a function of the $\pt$ for $\Dstar$ in 0-20$\%$(top), 20-60$\%$ (mid) and 60-100$\%$ (bottom) estimated on the basis of FONLL predictions}
 \label{fpromptDstar}
 \end{figure}
@@ -441,9 +429,6 @@ The resulting f$\_{\rm prompt}$ values are shown, for the three D mesons, in Fig
 \includegraphics[width=0.6\linewidth]{Centrality_DPlus/Dplus/Cmp_Prompt/fPrompt_0_20.png}
 \includegraphics[width=0.6\linewidth]{Centrality_DPlus/Dplus/Cmp_Prompt/fPrompt_20_60.png}
 \includegraphics[width=0.6\linewidth]{Centrality_DPlus/Dplus/Cmp_Prompt/fPrompt_60_100.png}
-
-
-
 }
 \caption{$f_{\rm prompt}$ as a function of the $\pt$ for $\Dplus$ in 0-20$\%$(top), 20-60$\%$ (mid) and 60-100$\%$ (bottom) estimated on the basis of FONLL predictions}
 \label{fpromptDplus}
