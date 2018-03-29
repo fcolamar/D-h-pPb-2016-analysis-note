@@ -752,9 +752,6 @@ $\pt$ ranges $> 0.3$, 0.3-1, $> 1$ GeV/$c$, respectively.}
 \end{figure}
 
 
-
-
-
 \subsubsection{DCA cut stability}
 Due to the negligible dependence of the purity on the centrality selection (reflecting no centrality dependence on the DCA variable  distribution), no centrality-dependent studies were performed, and the same systematic values adopted for 0-100\% analysis for this systematic uncertainty (from subsection 4.5) were used.
 
@@ -770,18 +767,17 @@ A table summarizing the systematic uncertainties on the $\Delta\varphi$ correlat
 \subsubsection{Uncertainties on fit observables}
 The evaluation of the systematic uncertainty on the fit observables is exactly the same as that described in subsection 5.3 for the centrality-integrated analysis (but considering, of course, in each centrality class the corresponding uncertainty values, as described in the previous section).
 The only modification involves the values chosen for the $v_2$ hypothesis (also dealt in subsection 5.3), which are differentiated on the bases of the centrality class.
-The hypotheses on the charged particle $v_2$ versus centrality were guessed on the bases of the results shown in Fig. \ref{fig:v2h}, taken from the analysis note on charged hadron $v_2$ in p--Pb collisions (2016 sample) in different V0A multiplicity classes. Though the estimator is different from the ZNA we use, the rather flat values of $v_2$ versus centrality ensures the possibility of using these results as reference.
+The hypotheses on the charged particle $v_2$ versus centrality were guessed on the bases of the results shown in Fig. \ref{fig:v2h}, taken from the analysis note on charged hadron $v_2$ in p--Pb collisions (2016 sample) in different V0A multiplicity classes, after the subtraction of the non-flow contribution (which, in our fits, we account with the Gaussian functions). Anyway, the estimator is different from the ZNA we use. ZNA tends to equalize more the different event multiplicities among the various centrality classes, hence shall give slightly lower (higher) $v_2$ values in 0-20\% (60-100\%) with respect to V0A estimator. For this reason, despite the V0A $v_2$ values for hadrons are compatible with 0, we still assigned a very small modulation also in this class. We didn't decrease, instead, the V0A $v_2$ values extracted from \ref{fig:v2h} for 0-20\% to stay safe with our assumptions.
 
 \begin{figure}
 \centering
-{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/v2/v2h1.jpg}}
-{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/v2/v2h2.jpg}} \\
-{\includegraphics[width=0.45\linewidth]{figuresVsCent/Global/v2/v2h3.jpg}}
+{\includegraphics[width=0.95\linewidth]{figuresVsCent/Global/v2/NewV2h.JPG}}
  \caption{Reference plots for estimation of $v_2$(h) hypotheses in the three CC.}
 \label{fig:v2h}
 \end{figure}
 
-The hypotheses on D-meson $v_2$ were guessed starting from ALICE preliminary results of heavy-flavour decay electron $v_2$ in the same collision system, using the ZNA estimator (left panel of \ref{fig:v2D}. The measurement was performed in lower $\pt$(e) ranges, but which by chance are fairly similar to the average $\pt$ of out D-meson correlation ranges, if the $\pt$ of the parent D-hadron is considered for charm-origin heavy-flavour decay electrons - as shown in the right panel of Fig. \ref{fig:v2D}. The drawback of this choice relies in the fact that these $v_2$ values are obtained after the HM-LM subtraction, while in our analysis we need hypotheses for $v_2$ in each CC (considering this, we used just flat values in each CC following the charged particle trend), and also in the fact that heavy-flavour electron $v_2$ includes the contribution from, beauty-hadron decay electrons (though small for $\pt < 3$ GeV/$c$), while the B-feed-down is instead subtracted in our D-meson analysis.
+The hypotheses on D-meson $v_2$ were guessed starting from ALICE preliminary results of heavy-flavour decay electron $v_2$ in the same collision system, using the ZNA estimator (left panel of \ref{fig:v2D}. The measurement was performed in lower $\pt$(e) ranges, but which by chance are fairly similar to the average $\pt$ of out D-meson correlation ranges, if the $\pt$ of the parent D-hadron is considered for charm-origin heavy-flavour decay electrons - as shown in the right panel of Fig. \ref{fig:v2D}. The drawback of this choice relies in the fact that these $v_2$ values are obtained after the HM-LM subtraction, while in our analysis we need hypotheses for $v_2$ in each CC.
+Hence, we assumed, as done for heavy-flavour decay electron $v_2$, a negligible (though not completely null) flow in 60-100\%, and used the HM-LM values extracted from \ref{fig:v2D} for our 0-20\%. The 20-60\% were assumed following the same centrality trend observed for the hadron $v_2$. Another potential drawback is the fact that heavy-flavour electron $v_2$ includes the contribution from beauty-hadron decay electrons, while the B-feed-down is instead subtracted in our D-meson analysis. Anyway, the beauty contribution of electrons should be small for $\pt < 3$ GeV/$c$, where the heavy-flavour electron $v_2$ has its largest value.
 
 \begin{figure}
 \centering
@@ -793,8 +789,8 @@ The hypotheses on D-meson $v_2$ were guessed starting from ALICE preliminary res
 
 In the following, thus, we enlist the $v_2$ hypotheses we adopted for the evaluation of the systematic on the fit observables due to a possible presence of flow:
 \begin{itemize}
-  \item For 0-20\%: 0.08, 0.08, 0.04, 0.02 (for $\pt$(D) 3-5, 5-8, 8-16, 16-24 GeV/$c$); 0.08, 0.05, 0.11 (for $\pt$(assoc) $>0.3$, 0.3-1, $>1$ GeV/$c$)
-  \item For 20-60\%: 0.08, 0.08, 0.04, 0.02 (for $\pt$(D) 3-5, 5-8, 8-16, 16-24 GeV/$c$); 0.08, 0.05, 0.11 (for $\pt$(assoc) $>0.3$, 0.3-1, $>1$ GeV/$c$)
-  \item For 60-100\%: 0.08, 0.08, 0.04, 0.02 (for $\pt$(D) 3-5, 5-8, 8-16, 16-24 GeV/$c$); 0.10, 0.06, 0.13 (for $\pt$(assoc) $>0.3$, 0.3-1, $>1$ GeV/$c$)
+  \item For 0-20\%: 0.08, 0.08, 0.04, 0.02 (for $\pt$(D) 3-5, 5-8, 8-16, 16-24 GeV/$c$); 0.06, 0.05, 0.08 (for $\pt$(assoc) $>0.3$, 0.3-1, $>1$ GeV/$c$)
+  \item For 20-60\%: 0.04, 0.04, 0.02, 0.01 (for $\pt$(D) 3-5, 5-8, 8-16, 16-24 GeV/$c$); 0.03, 0.02, 0.05 (for $\pt$(assoc) $>0.3$, 0.3-1, $>1$ GeV/$c$)
+  \item For 60-100\%: 0.02, 0.02, 0.01, 0.00 (for $\pt$(D) 3-5, 5-8, 8-16, 16-24 GeV/$c$); 0.01, 0.005, 0.015 (for $\pt$(assoc) $>0.3$, 0.3-1, $>1$ GeV/$c$)
 \end{itemize}
 
