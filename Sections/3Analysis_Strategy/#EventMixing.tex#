@@ -32,35 +32,16 @@ in different detector region. However, $(\Delta\eta,\Delta\varphi)=(0,0)$ is in 
 the region with maximum efficiency for the pairs (both correlated and uncorrelated). Thus the same convention was adopted.
 
 The mixed-event correlation distributions are built in both D meson signal and sideband regions. Both are
-corrected with the relative distributions. An example of the mixed-event distributions, and of the outcome of the mixed-event correction, is provided in Figures \ref{fig:DzeroME} and \ref{fig:Dsubtr2D}. The expected triangular shape in $\Delta\eta$, for the mixed-event distributions, addresses the effect of the limited detector pseudo-rapidity acceptance. Note that the mixed-event distribution is limited to the interval $\left|\Delta\eta\right|<1$: the decision to limit the mixed-event correction, and thus the whole analysis, to this range was taken in order to avoid the so-called ``wing effect", i.e. the wing-like structures arising in the correlation distribution at large $\Delta\eta$ due to the limited filling of the correlation bins in that region. Examples of single-event, mixed-event and ME-corrected correlation distributions, for the same kinematic region of Fig. \ref{fig:DzeroME} but in larger $\left|\Delta\eta\right|$ ranges (1.2, 1.4 and 1.6) are shown in Figs. \ref{fig:DzeroMElarge1}, \ref{fig:DzeroMElarge2} and \ref{fig:DzeroMElarge3}.
+corrected with the relative distributions. An example of the mixed-event distributions, and of the outcome of the mixed-event correction, is provided in Figures \ref{fig:DzeroME} and \ref{fig:Dsubtr2D}. The expected triangular shape in $\Delta\eta$, for the mixed-event distributions, addresses the effect of the limited detector pseudo-rapidity acceptance. Note that the mixed-event distribution is limited to the interval $\left|\Delta\eta\right|<1$: the decision to limit the mixed-event correction, and thus the whole analysis, to this range was taken in order to avoid the so-called ``wing effect", i.e. the wing-like structures arising in the correlation distribution at large $\Delta\eta$ due to the
+limited filling of the correlation bins in that region.
 
 \begin{figure}
 \centering
-{\includegraphics[width=1\linewidth]{figures/Dzero/Example_SE_ME_D0_Deta10.png}}
+{\includegraphics[width=1\linewidth]{figures/Dzero/CorrSEandME_Dzero_Canvas_PtIntBins9to11_pool7_thr0dot3to99dot0.png}}
  \caption{$\Dzero$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from  Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $8 < p_\mathrm{T}<16$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
 \label{fig:DzeroME}
 \end{figure}
 
-\begin{figure}
-\centering
-{\includegraphics[width=1\linewidth]{figures/Dzero/Example_SE_ME_D0_Deta12.png}}
- \caption{$\Dzero$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from  Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $8 < p_\mathrm{T}<16$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
-\label{fig:DzeroMElarge1}
-\end{figure}
-
-\begin{figure}
-\centering
-{\includegraphics[width=1\linewidth]{figures/Dzero/Example_SE_ME_D0_Deta14.png}}
- \caption{$\Dzero$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from  Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $8 < p_\mathrm{T}<16$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
-\label{fig:DzeroMElarge2}
-\end{figure}
-
-\begin{figure}
-\centering
-{\includegraphics[width=1\linewidth]{figures/Dzero/Example_SE_ME_D0_Deta16.png}}
- \caption{$\Dzero$ meson ($\Delta\varphi$, $ \Delta\eta$) correlation for in the signal region (top row) and sidebands (bottom row) from  Single Event (left) and Mixed Event analysis (center) for high $p_\mathrm{T}$: $8 < p_\mathrm{T}<16$ GeV/c with associated $p_\mathrm{T} >$ 0.3 GeV/c. The right column shows the SE/ME corrected distributions.}
-\label{fig:DzeroMElarge3}
-\end{figure}
 
 
 \begin{figure}
